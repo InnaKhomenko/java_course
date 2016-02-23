@@ -6,7 +6,7 @@ gradle/
 sandbox/build.gradle
 sandbox/gradlew
 sandbox/gradlew.bat
-sandbox/src/
+
 
 
 # Ignore Gradle GUI config
