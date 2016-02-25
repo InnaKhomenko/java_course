@@ -1,18 +1,23 @@
 package inna.qa.dp;
 
-
 public class MyFirstProgramm {
 
-  public static void main(String[] args) {
+    public static double distance(Point p1, Point p2) {
+        return (Math.sqrt(Math.pow(p2.x - p1.x, 2) + Math.pow(p2.y - p1.y, 2)));
+    }
 
-    double x1 = 4;
-    double x2 = 3;
-    double y1 = 3;
-    double y2 = 6;
+    public static void main(String[] args) {
 
-    Point pp1 = new Point(x1, y1, x2, y2);
+        double x1 = 4;
+        double x2 = 3;
+        double y1 = 3;
+        double y2 = 6;
 
-    System.out.println("Расстояние между точками " + " = " + (pp1.distance(pp1,pp1,pp1,pp1)));
+        Point p1 = new Point(x1, y1);
+        Point p2 = new Point(x2, y2);
+        System.out.println("Расстояние между точками " + " = " + (distance(p1, p2)));
+        System.out.println("Расстояние между точками " + " = " + (p1.distance2(p1, p2)));
 
-  }
+    }
+
 }
