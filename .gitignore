@@ -7,6 +7,10 @@ sandbox/build.gradle
 sandbox/gradlew
 sandbox/gradlew.bat
 
+sandbox/src/main/java/inna/qa/dp/dp.iml
+sandbox/src/main/java/inna/qa/dp/out/
+
+dp/out/
 
 
 # Ignore Gradle GUI config
