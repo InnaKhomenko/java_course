@@ -3,7 +3,7 @@
 build/
 gradle/
 .metadata/
-sandbox/build.gradle
+
 sandbox/gradlew
 sandbox/gradlew.bat
 
