@@ -3,6 +3,9 @@ package inna.qa.dp;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.Collections;
+
+
 public class PointTests {
     @Test
     public void TestDistance() {
@@ -18,5 +21,6 @@ public class PointTests {
         Assert.assertEquals(p2.distance2(p1, p2), 3.1622776601683795);
         Assert.assertEquals(p1.distance_P1(p1, p2), 1.0);
         Assert.assertEquals(p1.distance_P2(p1, p2), 9.0);
+
     }
 }
