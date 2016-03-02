@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e533497a-a7a8-4c74-9d1d-1156a3336c1d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../addressbook-web-tests/build/classes/test/inna/qa/dp/GroupeCreationTests.class" afterPath="$PROJECT_DIR$/../addressbook-web-tests/build/classes/test/inna/qa/dp/GroupeCreationTests.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../addressbook-web-tests/build/classes/test/inna/qa/dp/homeWork3.class" afterPath="$PROJECT_DIR$/../addressbook-web-tests/build/classes/test/inna/qa/dp/homeWork3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/homeWork3.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/homeWork3.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sandbox.iws" />
@@ -81,25 +82,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homeWork3.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="homeWork3.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/homeWork3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.7342932">
+              <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
               <folding>
-                <element signature="e#4741#4742#0" expanded="true" />
-                <element signature="e#4828#4829#0" expanded="true" />
-                <element signature="e#5007#5008#0" expanded="true" />
-                <element signature="e#5069#5070#0" expanded="true" />
+                <element signature="e#4745#4746#0" expanded="true" />
+                <element signature="e#4832#4833#0" expanded="true" />
+                <element signature="e#5011#5012#0" expanded="true" />
+                <element signature="e#5073#5074#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="groupInfoContact.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GroupDeletionTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/GroupDeletionTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="groupInfoContact.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/groupInfoContact.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4672775">
+            <state vertical-scroll-proportion="0.0">
               <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
               <folding />
             </state>
@@ -722,6 +733,7 @@
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/GroupeCreationTests.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/HomeWorkTest.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/groupInfoContact.java" />
+        <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/GroupDeletionTests.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/homeWork3.java" />
       </list>
     </option>
@@ -1315,12 +1327,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HomeWorkTest - 2016.03.01 at 15h 02m 16s.xml">
-      <configuration name="HomeWorkTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="HomeWorkTest - 2016.03.01 at 15h 28m 01s.xml">
-      <configuration name="HomeWorkTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="HomeWorkTest - 2016.03.01 at 15h 59m 52s.xml">
       <configuration name="HomeWorkTest" configurationId="TestNG" />
     </history-entry>
@@ -1343,6 +1349,12 @@
       <configuration name="homeWork3" configurationId="TestNG" />
     </history-entry>
     <history-entry file="homeWork3 - 2016.03.02 at 21h 59m 32s.xml">
+      <configuration name="homeWork3" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="homeWork3 - 2016.03.02 at 22h 30m 39s.xml">
+      <configuration name="homeWork3" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="homeWork3 - 2016.03.02 at 22h 38m 27s.xml">
       <configuration name="homeWork3" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1478,24 +1490,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/homeWork3.java">
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/groupInfoContact.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-          <folding>
-            <element signature="e#4741#4742#0" expanded="true" />
-            <element signature="e#4828#4829#0" expanded="true" />
-            <element signature="e#5007#5008#0" expanded="true" />
-            <element signature="e#5069#5070#0" expanded="true" />
-          </folding>
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/groupInfoContact.java">
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/GroupDeletionTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4672775">
-          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/homeWork3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7342932">
+          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+          <folding>
+            <element signature="e#4745#4746#0" expanded="true" />
+            <element signature="e#4832#4833#0" expanded="true" />
+            <element signature="e#5011#5012#0" expanded="true" />
+            <element signature="e#5073#5074#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

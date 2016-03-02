@@ -34,7 +34,7 @@ public class homeWork3 {
     }
 
     @Test
-    public void homeWork3() {
+    public void testHomeWork3() {
         ;
         addNewContact();
         addInfoContact(new groupInfoContact("test2", "inna23 ", "khomenko", "mio", "ddd", "zp", "ukraine", "www", "323434545454545", "56565656565656", "56565656565656", "fdff@rr.rrr", "rtttrtr@rrr.rttr", "333@rr.rtrt", "trrtrtrt", "545454545", "rrttttyty"));
