@@ -1,6 +1,7 @@
 .metadata/
 sandbox/build
-#addressbook-web-tests/build
+addressbook-web-tests/build
+addressbook-web-tests/.gradle
 .gradle/
 
 
