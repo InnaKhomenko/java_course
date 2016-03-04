@@ -1,6 +1,8 @@
 .metadata/
 sandbox/build
-java_course\jaddressbook-web-tests/build
+java_course/jaddressbook-web-tests/build
+
+
 
 # Ignore Gradle GUI config
 gradle-app.setting
