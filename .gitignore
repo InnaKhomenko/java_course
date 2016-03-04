@@ -2,6 +2,9 @@
 sandbox/build
 addressbook-web-tests/build
 java_course/addressbook-web-tests/build
+addressbook-web-tests/build
+.gradle/
+
 
 
 # Ignore Gradle GUI config
