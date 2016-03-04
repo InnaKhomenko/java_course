@@ -1,4 +1,4 @@
-package inna.qa.dp;
+package inna.qa.dp.tests;
 
 import org.testng.annotations.Test;
 
@@ -6,9 +6,9 @@ public class ContactDeletionTests extends TestBase {
 
     @Test
     public void testsContactDeletion() {
-        goToContactsPage();
-        selectContact();
-        deleteSelectedContact();
+        app.goToContactsPage();
+        app.selectContact();
+        app.deleteSelectedContact();
     }
 
 }

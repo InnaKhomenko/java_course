@@ -1,4 +1,4 @@
-package inna.qa.dp;
+package inna.qa.dp.model;
 
 public class groupInfoContact {
     private final String firstname;
