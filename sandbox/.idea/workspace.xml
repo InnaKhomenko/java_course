@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e533497a-a7a8-4c74-9d1d-1156a3336c1d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/ApplicationManager.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/ApplicationManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/tests/ContactDeletionTests.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/tests/ContactDeletionTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/tests/GroupDeletionTests.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/tests/GroupDeletionTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/tests/GroupeCreationTests.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/tests/GroupeCreationTests.java" />
-    </list>
+    <list default="true" id="e533497a-a7a8-4c74-9d1d-1156a3336c1d" name="Default" comment="" />
     <ignored path="sandbox.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -104,10 +99,9 @@
       <file leaf-file-name="ApplicationManager.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/ApplicationManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6230366">
-              <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.066753924">
+              <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#1370#1371#0" expanded="true" />
                 <element signature="e#1417#1418#0" expanded="true" />
                 <element signature="e#1443#1444#0" expanded="true" />
@@ -1478,7 +1472,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1667,10 +1661,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/ApplicationManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6230366">
-          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.066753924">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="e#1370#1371#0" expanded="true" />
             <element signature="e#1417#1418#0" expanded="true" />
             <element signature="e#1443#1444#0" expanded="true" />
