@@ -11,10 +11,10 @@ import java.util.concurrent.TimeUnit;
  * Created by Inna on 04.03.2016.
  */
 public class ApplicationManager {
-
     FirefoxDriver wd;
+    private NavigationHelper navigationHelper;
+    private SessionHelper sessionHelper;
 
-    private GroupHelper groupHelper;
 
     public static boolean isAlertPresent(FirefoxDriver wd) {
         try {
@@ -27,25 +27,14 @@ public class ApplicationManager {
 
     public void init() {
         wd = new FirefoxDriver();
-        groupHelper = new GroupHelper(wd);
+        navigationHelper.groupHelper = new GroupHelper(wd);
+        sessionHelper = new SessionHelper(wd);
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         wd.get("http://localhost/addressbook/group.php");
-        login("admin", "secret");
+        navigationHelper = new NavigationHelper(wd);
+        sessionHelper.login("admin", "secret");
     }
 
-    public void login(String username, String password) {
-        wd.findElement(By.name("user")).click();
-        wd.findElement(By.name("pass")).clear();
-        wd.findElement(By.name("user")).sendKeys(username);
-        wd.findElement(By.name("pass")).click();
-        wd.findElement(By.name("pass")).clear();
-        wd.findElement(By.name("pass")).sendKeys(password);
-        wd.findElement(By.xpath("//form[@id='LoginForm']/input[3]")).click();
-    }
-
-    public void gotoGroupPage() {
-        groupHelper.returnToGroupPage();
-    }
 
     public void stop() {
         wd.quit();
@@ -123,7 +112,7 @@ public class ApplicationManager {
     }
 
     public void logout() {
-        goToContactsPage();
+        //goToContactsPage();
         wd.findElement(By.linkText("Logout")).click();
     }
 
@@ -132,6 +121,10 @@ public class ApplicationManager {
     }
 
     public GroupHelper getGroupHelper() {
-        return groupHelper;
+        return navigationHelper.groupHelper;
+    }
+
+    public NavigationHelper getNavigationHelper() {
+        return navigationHelper;
     }
 }

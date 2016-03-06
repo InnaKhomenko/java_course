@@ -1,5 +1,6 @@
 package inna.qa.dp.tests;
 
+import inna.qa.dp.appmanager.SessionHelper;
 import inna.qa.dp.model.groupInfoContact;
 import org.testng.annotations.Test;
 
