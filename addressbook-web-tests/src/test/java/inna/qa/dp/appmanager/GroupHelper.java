@@ -14,6 +14,10 @@ public class GroupHelper {
         this.wd=wd;
     }
 
+    public void returnToGroupPage() {
+        wd.findElement(By.linkText("groups")).click();
+    }
+
     public void submitGroupCreation() {
         wd.findElement(By.name("submit")).click();
     }
@@ -38,7 +42,7 @@ public class GroupHelper {
         wd.findElement(By.name("selected[]")).click();
     }
 
-    public void deleteSelectedContact() {
-        wd.findElement(By.xpath("//div[@id='content']/form[2]/input[2]")).click();
+    public void deleteSelectedGroups() {
+        wd.findElement(By.name("delete")).click();
     }
 }
