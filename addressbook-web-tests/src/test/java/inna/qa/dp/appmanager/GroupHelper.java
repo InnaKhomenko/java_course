@@ -8,14 +8,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
  * Created by Inna on 04.03.2016.
  */
 public class GroupHelper {
-   private FirefoxDriver wd;
+    private FirefoxDriver wd;
 
     public GroupHelper(FirefoxDriver wd) {
         this.wd=wd;
-    }
-
-    public void returnToGroupPage() {
-        wd.findElement(By.linkText("groups")).click();
     }
 
     public void submitGroupCreation() {

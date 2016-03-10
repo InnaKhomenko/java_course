@@ -1,12 +1,13 @@
 package inna.qa.dp.appmanager;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 /**
  * Created by Inna on 06.03.2016.
  */
 public class NavigationHelper {
-    protected GroupHelper groupHelper;
+
     private FirefoxDriver wd;
 
     public NavigationHelper(FirefoxDriver wd) {
@@ -14,6 +15,6 @@ public class NavigationHelper {
     }
 
     public void gotoGroupPage() {
-        groupHelper.returnToGroupPage();
-    }
+            wd.findElement(By.linkText("groups")).click();
+        }
 }

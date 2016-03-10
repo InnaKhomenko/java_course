@@ -14,6 +14,7 @@ public class ApplicationManager {
     FirefoxDriver wd;
     private NavigationHelper navigationHelper;
     private SessionHelper sessionHelper;
+    private GroupHelper groupHelper;
 
 
     public static boolean isAlertPresent(FirefoxDriver wd) {
@@ -27,7 +28,7 @@ public class ApplicationManager {
 
     public void init() {
         wd = new FirefoxDriver();
-        navigationHelper.groupHelper = new GroupHelper(wd);
+        groupHelper = new GroupHelper(wd);
         sessionHelper = new SessionHelper(wd);
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         wd.get("http://localhost/addressbook/group.php");
@@ -112,7 +113,6 @@ public class ApplicationManager {
     }
 
     public void logout() {
-        //goToContactsPage();
         wd.findElement(By.linkText("Logout")).click();
     }
 
@@ -121,7 +121,7 @@ public class ApplicationManager {
     }
 
     public GroupHelper getGroupHelper() {
-        return navigationHelper.groupHelper;
+        return groupHelper;
     }
 
     public NavigationHelper getNavigationHelper() {
