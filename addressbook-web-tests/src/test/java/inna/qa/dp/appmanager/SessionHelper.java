@@ -3,9 +3,6 @@ package inna.qa.dp.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-/**
- * Created by Inna on 06.03.2016.
- */
 public class SessionHelper extends HelperBase {
 
     public SessionHelper(FirefoxDriver wd) {

@@ -4,9 +4,6 @@ import inna.qa.dp.model.GroupData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-/**
- * Created by Inna on 04.03.2016.
- */
 public class GroupHelper extends HelperBase {
 
 
@@ -15,11 +12,11 @@ public class GroupHelper extends HelperBase {
     }
 
     public void returnToGroupPage() {
-        wd.findElement(By.linkText("groups")).click();
+        Click(By.linkText("groups"));
     }
 
     public void submitGroupCreation() {
-        wd.findElement(By.name("submit")).click();
+        Click(By.name("submit"));
     }
 
     public void feelGroupForm(GroupData groupData) {
@@ -33,10 +30,10 @@ public class GroupHelper extends HelperBase {
     }
 
     public void selectGroup() {
-        wd.findElement(By.name("selected[]")).click();
+        Click(By.name("selected[]"));
     }
 
     public void deleteSelectedGroups() {
-        wd.findElement(By.name("delete")).click();
+        Click(By.name("delete"));
     }
 }

@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e533497a-a7a8-4c74-9d1d-1156a3336c1d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/ApplicationManager.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/ApplicationManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/ContactHelper.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/ContactHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/GroupHelper.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/GroupHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/HelperBase.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/HelperBase.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/NavigationHelper.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/NavigationHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/SessionHelper.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/SessionHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sandbox.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,10 +76,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GroupDeletionTests.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GroupDeletionTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/tests/GroupDeletionTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.10225564">
               <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding />
             </state>
@@ -122,30 +122,35 @@
         <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/SessionHelper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="18" />
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#248#249#0" expanded="true" />
-                <element signature="e#273#274#0" expanded="true" />
+                <element signature="e#206#207#0" expanded="true" />
+                <element signature="e#231#232#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GroupHelper.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GroupHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/GroupHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7669173">
-              <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#280#281#0" expanded="true" />
-                <element signature="e#305#306#0" expanded="true" />
-                <element signature="e#344#345#0" expanded="true" />
-                <element signature="e#405#406#0" expanded="true" />
-                <element signature="e#446#447#0" expanded="true" />
-                <element signature="e#503#504#0" expanded="true" />
-                <element signature="e#818#819#0" expanded="true" />
+                <element signature="e#238#239#0" expanded="true" />
+                <element signature="e#263#264#0" expanded="true" />
+                <element signature="e#302#303#0" expanded="true" />
+                <element signature="e#346#347#0" expanded="true" />
+                <element signature="e#387#388#0" expanded="true" />
+                <element signature="e#427#428#0" expanded="true" />
+                <element signature="e#705#706#0" expanded="true" />
+                <element signature="e#742#743#0" expanded="true" />
+                <element signature="e#775#776#0" expanded="true" />
+                <element signature="e#819#820#0" expanded="true" />
+                <element signature="e#861#862#0" expanded="true" />
+                <element signature="e#901#902#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,9 +160,11 @@
         <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/NavigationHelper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#271#272#0" expanded="true" />
+                <element signature="e#319#320#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,11 +174,11 @@
         <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/HelperBase.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#372#373#0" expanded="true" />
-                <element signature="e#419#420#0" expanded="true" />
+                <element signature="e#330#331#0" expanded="true" />
+                <element signature="e#377#378#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -181,9 +188,19 @@
         <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/ContactHelper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+              <caret line="49" column="65" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#308#309#0" expanded="true" />
+                <element signature="e#391#392#0" expanded="true" />
+                <element signature="e#429#430#0" expanded="true" />
+                <element signature="e#471#472#0" expanded="true" />
+                <element signature="e#1645#1646#0" expanded="true" />
+                <element signature="e#1715#1716#0" expanded="true" />
+                <element signature="e#1750#1751#0" expanded="true" />
+                <element signature="e#1795#1796#0" expanded="true" />
+                <element signature="e#1838#1839#0" expanded="true" />
+                <element signature="e#1910#1911#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -803,14 +820,14 @@
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/tests/ContactCreationTests.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/tests/ContactDeletionTests.java" />
-        <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/ContactHelper.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/tests/GroupDeletionTests.java" />
-        <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/SessionHelper.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/tests/GroupeCreationTests.java" />
+        <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/ApplicationManager.java" />
+        <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/SessionHelper.java" />
+        <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/NavigationHelper.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/HelperBase.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/GroupHelper.java" />
-        <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/NavigationHelper.java" />
-        <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/ApplicationManager.java" />
+        <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/ContactHelper.java" />
       </list>
     </option>
   </component>
@@ -1488,11 +1505,14 @@
     <history-entry file="ContactCreationTests - 2016.03.11 at 11h 44m 43s.xml">
       <configuration name="ContactCreationTests" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="ContactCreationTests - 2016.03.11 at 12h 26m 28s.xml">
+      <configuration name="ContactCreationTests" configurationId="TestNG" />
+    </history-entry>
     <history-entry file="ContactDeletionTests - 2016.03.11 at 11h 45m 02s.xml">
       <configuration name="ContactDeletionTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="GroupDeletionTests - 2016.03.10 at 18h 56m 09s.xml">
-      <configuration name="GroupDeletionTests" configurationId="TestNG" />
+    <history-entry file="ContactDeletionTests - 2016.03.11 at 12h 26m 46s.xml">
+      <configuration name="ContactDeletionTests" configurationId="TestNG" />
     </history-entry>
     <history-entry file="GroupDeletionTests - 2016.03.11 at 11h 43m 59s.xml">
       <configuration name="GroupDeletionTests" configurationId="TestNG" />
@@ -1500,19 +1520,16 @@
     <history-entry file="GroupDeletionTests - 2016.03.11 at 11h 45m 35s.xml">
       <configuration name="GroupDeletionTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="GroupeCreationTests - 2016.03.10 at 18h 48m 59s.xml">
-      <configuration name="GroupeCreationTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="GroupeCreationTests - 2016.03.10 at 18h 56m 55s.xml">
-      <configuration name="GroupeCreationTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="GroupeCreationTests - 2016.03.10 at 18h 58m 21s.xml">
-      <configuration name="GroupeCreationTests" configurationId="TestNG" />
+    <history-entry file="GroupDeletionTests - 2016.03.11 at 12h 27m 29s.xml">
+      <configuration name="GroupDeletionTests" configurationId="TestNG" />
     </history-entry>
     <history-entry file="GroupeCreationTests - 2016.03.10 at 18h 58m 48s.xml">
       <configuration name="GroupeCreationTests" configurationId="TestNG" />
     </history-entry>
     <history-entry file="GroupeCreationTests - 2016.03.11 at 11h 45m 19s.xml">
+      <configuration name="GroupeCreationTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="GroupeCreationTests - 2016.03.11 at 12h 27m 03s.xml">
       <configuration name="GroupeCreationTests" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1633,6 +1650,8 @@
           <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1643,13 +1662,18 @@
           <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#775#776#0" expanded="true" />
+            <element signature="e#819#820#0" expanded="true" />
+            <element signature="e#861#862#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1728,6 +1752,8 @@
           <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1738,13 +1764,18 @@
           <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#775#776#0" expanded="true" />
+            <element signature="e#819#820#0" expanded="true" />
+            <element signature="e#861#862#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1797,13 +1828,18 @@
           <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#775#776#0" expanded="true" />
+            <element signature="e#819#820#0" expanded="true" />
+            <element signature="e#861#862#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1891,14 +1927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/tests/GroupDeletionTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/tests/ContactDeletionTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1926,23 +1954,11 @@
     <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/SessionHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="18" />
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/HelperBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#206#207#0" expanded="true" />
+            <element signature="e#231#232#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1950,9 +1966,23 @@
     <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/NavigationHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/HelperBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1967,30 +1997,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/ContactHelper.java">
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/GroupHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#775#776#0" expanded="true" />
+            <element signature="e#819#820#0" expanded="true" />
+            <element signature="e#861#862#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/GroupHelper.java">
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/appmanager/ContactHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7669173">
-          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="65" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#391#392#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#471#472#0" expanded="true" />
+            <element signature="e#1645#1646#0" expanded="true" />
+            <element signature="e#1715#1716#0" expanded="true" />
+            <element signature="e#1750#1751#0" expanded="true" />
+            <element signature="e#1795#1796#0" expanded="true" />
+            <element signature="e#1838#1839#0" expanded="true" />
+            <element signature="e#1910#1911#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/inna/qa/dp/tests/GroupDeletionTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10225564">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
