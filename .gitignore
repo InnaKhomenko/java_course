@@ -1,10 +1,13 @@
-.metadata/
+.gradle
+.idea
 sandbox/build
-addressbook-web-tests/build
-addressbook-web-tests/.gradle
-.gradle/
+addressbook-web-tests/build/
+java_course.iml
+sandbox/build.gradle
 
-
+addressbook-web-tests/addressbook-web-tests.iml
+addressbook-web-tests/build.gradle
+sandbox/sandbox.iml
 
 # Ignore Gradle GUI config
 gradle-app.setting
