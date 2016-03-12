@@ -9,6 +9,9 @@ addressbook-web-tests/addressbook-web-tests.iml
 addressbook-web-tests/build.gradle
 sandbox/sandbox.iml
 
+sandbox/.idea
+addressbook-web-tests/.idea
+
 # Ignore Gradle GUI config
 gradle-app.setting
 
