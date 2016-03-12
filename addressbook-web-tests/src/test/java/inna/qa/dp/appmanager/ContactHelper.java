@@ -2,11 +2,12 @@ package inna.qa.dp.appmanager;
 
 import inna.qa.dp.model.groupInfoContact;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class ContactHelper extends HelperBase {
 
-    public ContactHelper(FirefoxDriver wd) {
+    public ContactHelper(WebDriver wd) {
         super(wd);
     }
 
@@ -52,5 +53,13 @@ public class ContactHelper extends HelperBase {
 
     public void submitContactModification() {
         Click(By.xpath("//div[@id='content']/form[2]/div[2]/input"));
+    }
+
+    public void editContact() {
+        Click(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a/img"));
+    }
+
+    public void updateContact() {
+        Click(By.name("update"));
     }
 }
