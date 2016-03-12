@@ -2,8 +2,11 @@ package inna.qa.dp.appmanager;
 
 import inna.qa.dp.model.groupInfoContact;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 public class ContactHelper extends HelperBase {
 
@@ -19,7 +22,7 @@ public class ContactHelper extends HelperBase {
         Click(By.linkText("home"));
     }
 
-    public void addInfoContact(groupInfoContact groupInfoContact) {
+    public void addInfoContact(groupInfoContact groupInfoContact, boolean creation) {
         type(By.name("firstname"),groupInfoContact.getFirstname());
         type(By.name("middlename"),groupInfoContact.getName());
         type(By.name("lastname"),groupInfoContact.getLastname());
@@ -36,7 +39,17 @@ public class ContactHelper extends HelperBase {
         type(By.name("homepage"),groupInfoContact.getHomepage());
         type(By.name("address2"),groupInfoContact.getAddress2());
         type(By.name("phone2"),groupInfoContact.getPhone2());
-        type(By.name("notes"),groupInfoContact.getNotes());;
+        type(By.name("notes"),groupInfoContact.getNotes());
+
+        if (creation){
+            new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(groupInfoContact.getGroup());
+        } else {
+            Assert.assertFalse(isElementPresent(By.name("new_group")));
+        }
+
+        if (isElementPresent(By.name("new_group"))) {
+
+        }
     }
 
     public void inputContact() {

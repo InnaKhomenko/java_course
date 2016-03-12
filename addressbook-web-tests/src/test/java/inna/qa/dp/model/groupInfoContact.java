@@ -18,8 +18,9 @@ public class groupInfoContact {
     private final String address2;
     private final String phone2;
     private final String notes;
+    private String group;
 
-    public groupInfoContact(String firstname, String name, String lastname, String nickname, String title, String company, String address, String home, String mobile, String work, String fax, String email2, String email3, String homepage, String address2, String phone2, String notes) {
+    public groupInfoContact(String firstname, String name, String lastname, String nickname, String title, String company, String address, String home, String mobile, String work, String fax, String email2, String email3, String homepage, String address2, String phone2, String notes, String groupe) {
         this.firstname = firstname;
         this.name = name;
         this.lastname = lastname;
@@ -37,6 +38,7 @@ public class groupInfoContact {
         this.address2 = address2;
         this.phone2 = phone2;
         this.notes = notes;
+        this.group = groupe;
     }
 
     public String getFirstname() {
@@ -105,5 +107,9 @@ public class groupInfoContact {
 
     public String getNotes() {
         return notes;
+    }
+
+    public String getGroup() {
+        return group;
     }
 }

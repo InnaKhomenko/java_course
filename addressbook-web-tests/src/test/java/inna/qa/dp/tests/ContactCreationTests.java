@@ -9,8 +9,9 @@ public class ContactCreationTests extends TestBase {
     public void testsContactCreation() {
 
         app.getContactHelper().addNewContact();
-        app.getContactHelper().addInfoContact(new groupInfoContact("test10may", "inna23 ", "khomenko", "mio", "ddd", "zp", "ukraine", "www", "323434545454545", "56565656565656", "56565656565656", "fdff@rr.rrr", "rtttrtr@rrr.rttr", "333@rr.rtrt", "trrtrtrt", "545454545", "rrttttyty"));
+        app.getContactHelper().addInfoContact(new groupInfoContact("test1", "inna23 ", "khomenko", "mio", "ddd", "zp", "ukraine", "www", "323434545454545", "56565656565656", "56565656565656", "fdff@rr.rrr", "rtttrtr@rrr.rttr", "333@rr.rtrt", "trrtrtrt", "545454545", "rrttttyty", "test1"),true);
         app.getContactHelper().inputContact();
+        app.getContactHelper().goToContactsPage();
         app.logout();
     }
 

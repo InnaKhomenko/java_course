@@ -8,8 +8,8 @@ public class ContactModificationTests extends TestBase {
     public void testContactModification() {
         app.getContactHelper().goToContactsPage();
         app.getContactHelper().editContact();
-        app.getContactHelper().addInfoContact(new groupInfoContact("test11may", "inna23 ", null, "mio", "ddd", null, "ukraine", "www", "323434545454545", "56565656565656", "56565656565656", "fdff@rr.rrr", "rtttrtr@rrr.rttr", "333@rr.rtrt", "trrtrtrt", "545454545", "rrttttyty"));
+        app.getContactHelper().addInfoContact(new groupInfoContact("test11may", "inna23 ", null, "mio", "ddd", null, "ukraine", "www", "323434545454545", "56565656565656", "56565656565656", "fdff@rr.rrr", "rtttrtr@rrr.rttr", "333@rr.rtrt", "trrtrtrt", "545454545", "rrttttyty", null), false);
         app.getContactHelper().updateContact();
-        app.getContactHelper().goToContactsPage();
+        app.getNavigationHelper().gotoHomePage();
     }
 }
