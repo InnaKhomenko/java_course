@@ -23,25 +23,25 @@ public class ContactHelper extends HelperBase {
     }
 
     public void addInfoContact(groupInfoContact groupInfoContact, boolean creation) {
-        type(By.name("firstname"),groupInfoContact.getFirstname());
-        type(By.name("middlename"),groupInfoContact.getName());
-        type(By.name("lastname"),groupInfoContact.getLastname());
-        type(By.name("nickname"),groupInfoContact.getNickname());
-        type(By.name("title"),groupInfoContact.getTitle());
-        type(By.name("company"),groupInfoContact.getCompany());
-        type(By.name("address"),groupInfoContact.getAddress());
-        type(By.name("home"),groupInfoContact.getHome());
-        type(By.name("mobile"),groupInfoContact.getMobile());
-        type(By.name("work"),groupInfoContact.getWork());
-        type(By.name("fax"),groupInfoContact.getFax());
-        type(By.name("email2"),groupInfoContact.getEmail2());
-        type(By.name("email3"),groupInfoContact.getEmail3());
-        type(By.name("homepage"),groupInfoContact.getHomepage());
-        type(By.name("address2"),groupInfoContact.getAddress2());
-        type(By.name("phone2"),groupInfoContact.getPhone2());
-        type(By.name("notes"),groupInfoContact.getNotes());
+        type(By.name("firstname"), groupInfoContact.getFirstname());
+        type(By.name("middlename"), groupInfoContact.getName());
+        type(By.name("lastname"), groupInfoContact.getLastname());
+        type(By.name("nickname"), groupInfoContact.getNickname());
+        type(By.name("title"), groupInfoContact.getTitle());
+        type(By.name("company"), groupInfoContact.getCompany());
+        type(By.name("address"), groupInfoContact.getAddress());
+        type(By.name("home"), groupInfoContact.getHome());
+        type(By.name("mobile"), groupInfoContact.getMobile());
+        type(By.name("work"), groupInfoContact.getWork());
+        type(By.name("fax"), groupInfoContact.getFax());
+        type(By.name("email2"), groupInfoContact.getEmail2());
+        type(By.name("email3"), groupInfoContact.getEmail3());
+        type(By.name("homepage"), groupInfoContact.getHomepage());
+        type(By.name("address2"), groupInfoContact.getAddress2());
+        type(By.name("phone2"), groupInfoContact.getPhone2());
+        type(By.name("notes"), groupInfoContact.getNotes());
 
-        if (creation){
+        if (creation) {
             new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(groupInfoContact.getGroup());
         } else {
             Assert.assertFalse(isElementPresent(By.name("new_group")));
@@ -74,5 +74,16 @@ public class ContactHelper extends HelperBase {
 
     public void updateContact() {
         Click(By.name("update"));
+    }
+
+    public void CreateContact(groupInfoContact groupInfoContact, boolean b) {
+        addNewContact();
+        addInfoContact(groupInfoContact, b);
+        inputContact();
+        goToContactsPage();
+    }
+
+    public boolean isThereAContact() {
+        return isElementPresent(By.name("selected[]"));
     }
 }
