@@ -1,6 +1,6 @@
 package inna.qa.dp.appmanager;
 
-import inna.qa.dp.model.groupInfoContact;
+import inna.qa.dp.model.ContactData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -22,27 +22,27 @@ public class ContactHelper extends HelperBase {
         Click(By.linkText("home"));
     }
 
-    public void addInfoContact(groupInfoContact groupInfoContact, boolean creation) {
-        type(By.name("firstname"), groupInfoContact.getFirstname());
-        type(By.name("middlename"), groupInfoContact.getName());
-        type(By.name("lastname"), groupInfoContact.getLastname());
-        type(By.name("nickname"), groupInfoContact.getNickname());
-        type(By.name("title"), groupInfoContact.getTitle());
-        type(By.name("company"), groupInfoContact.getCompany());
-        type(By.name("address"), groupInfoContact.getAddress());
-        type(By.name("home"), groupInfoContact.getHome());
-        type(By.name("mobile"), groupInfoContact.getMobile());
-        type(By.name("work"), groupInfoContact.getWork());
-        type(By.name("fax"), groupInfoContact.getFax());
-        type(By.name("email2"), groupInfoContact.getEmail2());
-        type(By.name("email3"), groupInfoContact.getEmail3());
-        type(By.name("homepage"), groupInfoContact.getHomepage());
-        type(By.name("address2"), groupInfoContact.getAddress2());
-        type(By.name("phone2"), groupInfoContact.getPhone2());
-        type(By.name("notes"), groupInfoContact.getNotes());
+    public void addInfoContact(ContactData contactData, boolean creation) {
+        type(By.name("firstname"), contactData.getFirstname());
+        type(By.name("middlename"), contactData.getName());
+        type(By.name("lastname"), contactData.getLastname());
+        type(By.name("nickname"), contactData.getNickname());
+        type(By.name("title"), contactData.getTitle());
+        type(By.name("company"), contactData.getCompany());
+        type(By.name("address"), contactData.getAddress());
+        type(By.name("home"), contactData.getHome());
+        type(By.name("mobile"), contactData.getMobile());
+        type(By.name("work"), contactData.getWork());
+        type(By.name("fax"), contactData.getFax());
+        type(By.name("email2"), contactData.getEmail2());
+        type(By.name("email3"), contactData.getEmail3());
+        type(By.name("homepage"), contactData.getHomepage());
+        type(By.name("address2"), contactData.getAddress2());
+        type(By.name("phone2"), contactData.getPhone2());
+        type(By.name("notes"), contactData.getNotes());
 
         if (creation) {
-            new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(groupInfoContact.getGroup());
+            new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
         } else {
             Assert.assertFalse(isElementPresent(By.name("new_group")));
         }
@@ -76,9 +76,9 @@ public class ContactHelper extends HelperBase {
         Click(By.name("update"));
     }
 
-    public void CreateContact(groupInfoContact groupInfoContact, boolean b) {
+    public void CreateContact(ContactData contactData, boolean b) {
         addNewContact();
-        addInfoContact(groupInfoContact, b);
+        addInfoContact(contactData, b);
         inputContact();
         goToContactsPage();
     }

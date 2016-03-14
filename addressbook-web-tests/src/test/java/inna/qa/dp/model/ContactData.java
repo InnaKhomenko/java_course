@@ -1,6 +1,6 @@
 package inna.qa.dp.model;
 
-public class groupInfoContact {
+public class ContactData {
     private final String firstname;
     private final String name;
     private final String lastname;
@@ -20,7 +20,7 @@ public class groupInfoContact {
     private final String notes;
     private String group;
 
-    public groupInfoContact(String firstname, String name, String lastname, String nickname, String title, String company, String address, String home, String mobile, String work, String fax, String email2, String email3, String homepage, String address2, String phone2, String notes, String groupe) {
+    public ContactData(String firstname, String name, String lastname, String nickname, String title, String company, String address, String home, String mobile, String work, String fax, String email2, String email3, String homepage, String address2, String phone2, String notes, String groupe) {
         this.firstname = firstname;
         this.name = name;
         this.lastname = lastname;
