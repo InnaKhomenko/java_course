@@ -109,7 +109,4 @@ public class ContactData {
         return notes;
     }
 
-    public String getGroup() {
-        return group;
-    }
 }

@@ -22,7 +22,7 @@ public class ContactHelper extends HelperBase {
         Click(By.linkText("home"));
     }
 
-    public void addInfoContact(ContactData contactData, boolean creation) {
+    public void addInfoContact(ContactData contactData) {
         type(By.name("firstname"), contactData.getFirstname());
         type(By.name("middlename"), contactData.getName());
         type(By.name("lastname"), contactData.getLastname());
@@ -41,15 +41,6 @@ public class ContactHelper extends HelperBase {
         type(By.name("phone2"), contactData.getPhone2());
         type(By.name("notes"), contactData.getNotes());
 
-        if (creation) {
-            new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
-        } else {
-            Assert.assertFalse(isElementPresent(By.name("new_group")));
-        }
-
-        if (isElementPresent(By.name("new_group"))) {
-
-        }
     }
 
     public void inputContact() {
@@ -76,9 +67,9 @@ public class ContactHelper extends HelperBase {
         Click(By.name("update"));
     }
 
-    public void CreateContact(ContactData contactData, boolean b) {
+    public void createContact(ContactData contactData) {
         addNewContact();
-        addInfoContact(contactData, b);
+        addInfoContact(contactData);
         inputContact();
         goToContactsPage();
     }
