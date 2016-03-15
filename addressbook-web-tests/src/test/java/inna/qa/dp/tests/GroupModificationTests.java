@@ -1,6 +1,7 @@
 package inna.qa.dp.tests;
 
 import inna.qa.dp.model.GroupData;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class GroupModificationTests extends TestBase {
@@ -11,10 +12,13 @@ public class GroupModificationTests extends TestBase {
             app.getGroupHelper().createGroupe(new GroupData("test1", null, null));
         }
         app.getNavigationHelper().gotoGroupPage();
+        int before = app.getGroupHelper().getGroupeCount();
         app.getGroupHelper().selectGroup();
         app.getGroupHelper().initGroupModification();
         app.getGroupHelper().feelGroupForm(new GroupData("test1", null, null));
         app.getGroupHelper().submitGroupModification();
         app.getGroupHelper().returnToGroupPage();
+        int after = app.getGroupHelper().getGroupeCount();
+        Assert.assertEquals(before,after);
     }
 }
