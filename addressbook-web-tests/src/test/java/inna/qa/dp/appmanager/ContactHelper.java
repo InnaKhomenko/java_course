@@ -14,9 +14,8 @@ public class ContactHelper extends HelperBase {
         super(wd);
     }
 
-    public void selectContact() {
-      //  Click(By.xpath("//input[@id='MassCB']"));
-        Click(By.name("selected[]"));
+    public void selectContact(int index) {
+        wd.findElements(By.name("selected[]")).get(index).click();
     }
 
     public void goToContactsPage() {

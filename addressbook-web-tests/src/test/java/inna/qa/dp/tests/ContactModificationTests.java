@@ -13,6 +13,7 @@ public class ContactModificationTests extends TestBase {
         }
         app.getContactHelper().goToContactsPage();
         int before = app.getContactHelper().getContactCount();
+        app.getContactHelper().selectContact(before-1);
         app.getContactHelper().editContact();
         app.getContactHelper().addInfoContact(new ContactData("test11may", "inna23 ", null, "mio", "ddd", null, "ukraine", "www", "323434545454545", "56565656565656", "56565656565656", "fdff@rr.rrr", "rtttrtr@rrr.rttr", "333@rr.rtrt", "trrtrtrt", "545454545", "rrttttyty", null));
         app.getContactHelper().updateContact();
