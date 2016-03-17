@@ -4,6 +4,8 @@ import inna.qa.dp.model.GroupData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class GroupModificationTests extends TestBase {
     @Test
     public void testGroupModification(){
@@ -12,13 +14,13 @@ public class GroupModificationTests extends TestBase {
             app.getGroupHelper().createGroupe(new GroupData("test1", null, null));
         }
         app.getNavigationHelper().gotoGroupPage();
-        int before = app.getGroupHelper().getGroupeCount();
-        app.getGroupHelper().selectGroup(before - 1);
+        List<GroupData> before = app.getGroupHelper().getGroupList();
+        app.getGroupHelper().selectGroup(before.size() - 1);
         app.getGroupHelper().initGroupModification();
         app.getGroupHelper().feelGroupForm(new GroupData("test1", null, null));
         app.getGroupHelper().submitGroupModification();
         app.getGroupHelper().returnToGroupPage();
-        int after = app.getGroupHelper().getGroupeCount();
-        Assert.assertEquals(before,after);
+        List<GroupData> after = app.getGroupHelper().getGroupList();
+        Assert.assertEquals(before.size(),after.size());
     }
 }
