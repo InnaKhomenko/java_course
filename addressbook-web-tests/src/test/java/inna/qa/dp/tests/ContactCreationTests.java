@@ -1,8 +1,6 @@
 package inna.qa.dp.tests;
 
-import inna.qa.dp.appmanager.ContactHelper;
 import inna.qa.dp.model.ContactData;
-import inna.qa.dp.model.GroupData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
