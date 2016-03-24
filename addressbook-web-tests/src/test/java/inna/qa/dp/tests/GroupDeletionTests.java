@@ -3,7 +3,6 @@ package inna.qa.dp.tests;
 import inna.qa.dp.model.GroupData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import java.util.List;
 
 public class GroupDeletionTests extends TestBase {
@@ -22,7 +21,6 @@ public class GroupDeletionTests extends TestBase {
         app.getGroupHelper().deleteSelectedGroups();
         app.getNavigationHelper().gotoGroupPage();
         List<GroupData> after = app.getGroupHelper().getGroupList();
-
         Assert.assertEquals(after.size(), before.size() - 1);
 
         before.remove(before.size() - 1);

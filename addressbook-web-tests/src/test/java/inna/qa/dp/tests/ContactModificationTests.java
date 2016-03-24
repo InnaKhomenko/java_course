@@ -4,7 +4,7 @@ import inna.qa.dp.model.ContactData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.HashSet;
+import java.util.Comparator;
 import java.util.List;
 
 public class ContactModificationTests extends TestBase {
@@ -24,11 +24,13 @@ public class ContactModificationTests extends TestBase {
         app.getContactHelper().updateContact();
         app.getNavigationHelper().gotoHomePage();
         List<ContactData> after = app.getContactHelper().getContactList();
-
         Assert.assertEquals(before.size(), after.size());
 
         before.remove(before.size()-1);
         before.add(contact);
-        Assert.assertEquals(new HashSet<Object>(before),new HashSet<Object>(after));
+        Comparator<? super ContactData> byId = (g1, g2) -> Integer.compare(g1.getId(), g2.getId());
+        before.sort(byId);
+        after.sort(byId);
+        Assert.assertEquals(before,after);
     }
 }
