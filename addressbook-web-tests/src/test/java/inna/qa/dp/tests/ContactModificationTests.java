@@ -24,6 +24,7 @@ public class ContactModificationTests extends TestBase {
         app.getContactHelper().updateContact();
         app.getNavigationHelper().gotoHomePage();
         List<ContactData> after = app.getContactHelper().getContactList();
+
         Assert.assertEquals(before.size(), after.size());
 
         before.remove(before.size()-1);
