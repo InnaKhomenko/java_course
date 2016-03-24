@@ -1,21 +1,16 @@
 .gradle
-.idea
 sandbox/build
 addressbook-web-tests/build/
 java_course.iml
 sandbox/build.gradle
 
-addressbook-web-tests/addressbook-web-tests.iml
 addressbook-web-tests/build.gradle
 addressbook-web-tests/buildew
 addressbook-web-tests/buildew.bat
-
-sandbox/sandbox.iml
-
-
-
-sandbox/.idea
-addressbook-web-tests/.idea
+sandbox/.idea/workspace.xml
+addressbook-web-tests/.idea/workspace.xml
+sandbox/.idea/misc.xml
+addressbook-web-tests/.idea/misc.xml
 
 # Ignore Gradle GUI config
 gradle-app.setting
