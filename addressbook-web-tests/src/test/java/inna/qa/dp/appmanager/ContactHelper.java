@@ -1,15 +1,10 @@
 package inna.qa.dp.appmanager;
 
 import inna.qa.dp.model.ContactData;
-import inna.qa.dp.model.GroupData;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
-
+import inna.qa.dp.appmanager.NavigationHelper;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,6 +20,12 @@ public class ContactHelper extends HelperBase {
 
     public void goToContactsPage() {
         Click(By.linkText("home"));
+    }
+
+    public void modifyContact(ContactData contact) {
+        addInfoContact(contact);
+        updateContact();
+        goToContactsPage();
     }
 
     public void addInfoContact(ContactData contactData) {
