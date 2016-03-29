@@ -4,7 +4,7 @@ import inna.qa.dp.model.ContactData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import inna.qa.dp.appmanager.NavigationHelper;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,21 +14,21 @@ public class ContactHelper extends HelperBase {
         super(wd);
     }
 
-    public void selectContact(int index) {
+    public void select(int index) {
         wd.findElements(By.name("selected[]")).get(index).click();
     }
 
-    public void goToContactsPage() {
+    public void goTo() {
         Click(By.linkText("home"));
     }
 
     public void modifyContact(ContactData contact) {
-        addInfoContact(contact);
+        addInfo(contact);
         updateContact();
-        goToContactsPage();
+        goTo();
     }
 
-    public void addInfoContact(ContactData contactData) {
+    public void addInfo(ContactData contactData) {
         type(By.name("firstname"), contactData.getFirstname());
         type(By.name("middlename"), contactData.getName());
         type(By.name("lastname"), contactData.getLastname());
@@ -53,15 +53,15 @@ public class ContactHelper extends HelperBase {
         Click(By.xpath("//div[@id='content']/form/input[21]"));
     }
 
-    public void addNewContact() {
+    public void addNew() {
         Click(By.linkText("add new"));
     }
 
-    public void deleteSelectedContact() {
+    public void delete() {
         wd.switchTo().alert().accept();
     }
 
-    public void submitContactModification() {
+    public void submit() {
         Click(By.xpath("//div[@id='content']/form[2]/div[2]/input"));
     }
 
@@ -73,11 +73,11 @@ public class ContactHelper extends HelperBase {
         Click(By.name("update"));
     }
 
-    public void createContact(ContactData contactData) {
-        addNewContact();
-        addInfoContact(contactData);
+    public void create(ContactData contactData) {
+        addNew();
+        addInfo(contactData);
         inputContact();
-        goToContactsPage();
+        goTo();
     }
 
     public boolean isThereAContact() {
@@ -88,7 +88,7 @@ public class ContactHelper extends HelperBase {
         return wd.findElements(By.name("selected[]")).size();
     }
 
-    public List<ContactData> getContactList() {
+    public List<ContactData> list() {
         List<ContactData> contacts = new ArrayList<ContactData>();
         List<WebElement> elements = wd.findElements(By.name("entry"));
         for (WebElement element : elements){
