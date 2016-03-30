@@ -3,6 +3,7 @@ package inna.qa.dp.tests;
 import inna.qa.dp.model.GroupData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import java.util.Comparator;
 import java.util.List;
 
@@ -13,7 +14,7 @@ public class GroupeCreationTests extends TestBase {
     public void testGroupeCreation() {
         app.goTo().groupPage();
         List<GroupData> before = app.group().list();
-        GroupData group = new GroupData("test3", null, null);
+        GroupData group = new GroupData().withtName("test3");
         app.group().create(group);
         app.goTo().groupPage();
         List<GroupData> after = app.group().list();
@@ -23,6 +24,6 @@ public class GroupeCreationTests extends TestBase {
         Comparator<? super GroupData> byId = (g1, g2) -> Integer.compare(g1.getId(), g2.getId());
         before.sort(byId);
         after.sort(byId);
-        Assert.assertEquals(before,after);
+        Assert.assertEquals(before, after);
     }
 }

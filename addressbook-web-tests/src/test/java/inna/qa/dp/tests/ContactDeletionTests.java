@@ -10,12 +10,13 @@ import java.util.List;
 public class ContactDeletionTests extends TestBase {
 
     @BeforeMethod
-    public void ensurePreconditions(){
+    public void ensurePreconditions() {
         app.contact().goTo();
-        if (app.group().list().size() == 0){
-            app.contact().create(new ContactData("test1", "inna23 ", "khomenko", "mio", "ddd", "zp", "ukraine",
-                    "www", "323434545454545", "56565656565656", "56565656565656", "fdff@rr.rrr", "rtttrtr@rrr.rttr",
-                    "333@rr.rtrt", "trrtrtrt", "545454545", "rrttttyty", "test1"));
+        if (app.group().list().size() == 0) {
+            app.contact().create(new ContactData().withAddress("ukraine").withAddress2("www").withCompany("test3")
+                    .withEmail2("333@rr.rtrt").withEmail3("rtttrtr@rrr.rttr").withFax("trrtrtrt").withFirstname("inna23").withGroup("mio")
+                    .withHome("rrttttyty").withHomepage("ddd").withLastname("khomenko").withMobile("56565656565656").withName("zp")
+                    .withFax("56565656565656").withWork("323434545454545"));
             app.contact().goTo();
         }
     }
@@ -32,7 +33,7 @@ public class ContactDeletionTests extends TestBase {
         Assert.assertEquals(after.size(), before.size() - 1);
 
         before.remove(index);
-        Assert.assertEquals(before,after);
+        Assert.assertEquals(before, after);
     }
 }
 

@@ -4,18 +4,18 @@ import inna.qa.dp.model.GroupData;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
 import java.util.List;
 
 public class GroupDeletionTests extends TestBase {
 
     @BeforeMethod
-    public void ensurePreconditions(){
+    public void ensurePreconditions() {
         app.goTo().groupPage();
-        if (app.group().list().size() == 0){
-            app.group().create(new GroupData("test1", null, null));
+        if (app.group().list().size() == 0) {
+            app.group().create(new GroupData().withtName("test1"));
         }
     }
-
 
     @Test
     public void TestsGroupDeletion() {
@@ -27,6 +27,6 @@ public class GroupDeletionTests extends TestBase {
         Assert.assertEquals(after.size(), before.size() - 1);
 
         before.remove(index);
-        Assert.assertEquals(before,after);
+        Assert.assertEquals(before, after);
     }
 }
