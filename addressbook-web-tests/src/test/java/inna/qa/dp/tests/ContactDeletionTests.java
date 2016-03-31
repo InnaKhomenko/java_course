@@ -1,11 +1,13 @@
 package inna.qa.dp.tests;
 
 import inna.qa.dp.model.ContactData;
+import inna.qa.dp.model.GroupData;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.List;
+import java.util.Set;
 
 public class ContactDeletionTests extends TestBase {
 
@@ -23,16 +25,16 @@ public class ContactDeletionTests extends TestBase {
 
     @Test
     public void testsContactDeletion() {
-        List<ContactData> before = app.contact().list();
-        int index = before.size() - 1;
-        app.contact().select(index);
+        Set<ContactData> before = app.contact().all();
+        ContactData deletedContact = before.iterator().next();
+        app.contact().select(deletedContact);
         app.contact().submit();
         app.contact().delete();
         app.contact().goTo();
-        List<ContactData> after = app.contact().list();
+        Set<ContactData> after = app.contact().all();
         Assert.assertEquals(after.size(), before.size() - 1);
 
-        before.remove(index);
+        before.remove(deletedContact);
         Assert.assertEquals(before, after);
     }
 }
