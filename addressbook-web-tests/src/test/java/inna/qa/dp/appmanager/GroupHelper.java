@@ -61,8 +61,8 @@ public class GroupHelper extends HelperBase {
         submitGroupCreation();
     }
 
-    public void modify(int index, GroupData group) {
-        selectGroup(index);
+    public void modify(GroupData group) {
+        selectGroupByID(group.getId());
         initGroupModification();
         feelGroupForm(group);
         submitGroupModification();
