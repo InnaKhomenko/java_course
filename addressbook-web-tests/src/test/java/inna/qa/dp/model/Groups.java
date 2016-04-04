@@ -1,7 +1,6 @@
 package inna.qa.dp.model;
 
 import com.google.common.collect.ForwardingSet;
-
 import java.util.HashSet;
 import java.util.Set;
 
