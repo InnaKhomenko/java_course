@@ -3,14 +3,8 @@ package inna.qa.dp.tests;
 import inna.qa.dp.model.GroupData;
 import inna.qa.dp.model.Groups;
 import org.hamcrest.CoreMatchers;
-import org.hamcrest.MatcherAssert;
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import java.util.List;
-import java.util.Set;
-
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.testng.Assert.assertEquals;
 
