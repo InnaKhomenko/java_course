@@ -1,12 +1,18 @@
 package inna.qa.dp.tests;
 
 import inna.qa.dp.model.GroupData;
+import inna.qa.dp.model.Groups;
+import org.hamcrest.CoreMatchers;
+import org.hamcrest.MatcherAssert;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.testng.Assert.assertEquals;
 
 public class GroupModificationTests extends TestBase {
 
@@ -21,16 +27,14 @@ public class GroupModificationTests extends TestBase {
     @Test
     public void testGroupModification() {
         app.goTo().groupPage();
-        Set<GroupData> before = app.group().all();
+        Groups before = app.group().all();
         GroupData modifiedGroup = before.iterator().next();
         GroupData group = new GroupData().
                 withId(modifiedGroup.getId()).withtName("test1").withHeader("test2").withFooter("test3");
         app.group().modify(group);
-        Set<GroupData> after = app.group().all();
-        Assert.assertEquals(before.size(), after.size());
+        Groups after = app.group().all();
+        assertEquals(before.size(), after.size());
 
-        before.remove(modifiedGroup);
-        before.add(group);
-        Assert.assertEquals(before, after);
+        assertThat(after, CoreMatchers.equalTo(before.without(modifiedGroup).withAdded(group)));
     }
 }
