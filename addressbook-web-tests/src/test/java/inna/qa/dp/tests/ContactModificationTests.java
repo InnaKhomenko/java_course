@@ -1,10 +1,12 @@
 package inna.qa.dp.tests;
 
 import inna.qa.dp.model.ContactData;
-import org.testng.Assert;
+import inna.qa.dp.model.Contacts;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import java.util.Set;
+import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.MatcherAssert.*;
+import static org.testng.Assert.assertEquals;
 
 public class ContactModificationTests extends TestBase {
 
@@ -23,7 +25,7 @@ public class ContactModificationTests extends TestBase {
     @Test
     public void testContactModification() {
 
-        Set<ContactData> before = app.contact().all();
+        Contacts before = app.contact().all();
         ContactData modifiedContact = before.iterator().next();
         ContactData contact = new ContactData().withId(modifiedContact.getId()).withAddress("ukraine").withAddress2("www").withCompany("test3")
                 .withEmail2("333@rr.rtrt").withEmail3("rtttrtr@rrr.rttr").withFax("trrtrtrt").withFirstname("inna23").withGroup("mio")
@@ -31,11 +33,9 @@ public class ContactModificationTests extends TestBase {
                 .withFax("56565656565656").withWork("323434545454545");
         app.contact().selectModificated(contact);
         app.contact().modifyContact(contact);
-        Set<ContactData> after = app.contact().all();
-        Assert.assertEquals(before.size(), after.size());
+        Contacts after = app.contact().all();
+        assertEquals(before.size(), after.size());
 
-        before.remove(modifiedContact);
-        before.add(contact);
-        Assert.assertEquals(before, after);
+        assertThat(after, equalTo(before.without(modifiedContact).withAdded(contact)));
     }
 }
