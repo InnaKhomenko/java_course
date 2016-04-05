@@ -33,9 +33,8 @@ public class ContactModificationTests extends TestBase {
                 .withFax("56565656565656").withWork("323434545454545");
         app.contact().selectModificated(contact);
         app.contact().modifyContact(contact);
+        assertThat(app.contact().count(), equalTo(before.size()));
         Contacts after = app.contact().all();
-        assertEquals(before.size(), after.size());
-
         assertThat(after, equalTo(before.without(modifiedContact).withAdded(contact)));
     }
 }
