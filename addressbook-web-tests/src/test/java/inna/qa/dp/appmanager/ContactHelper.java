@@ -63,6 +63,7 @@ public class ContactHelper extends HelperBase {
         type(By.name("mobile"), contactData.getMobile());
         type(By.name("work"), contactData.getWork());
         type(By.name("fax"), contactData.getFax());
+        type(By.name("email"), contactData.getEmail1());
         type(By.name("email2"), contactData.getEmail2());
         type(By.name("email3"), contactData.getEmail3());
         type(By.name("homepage"), contactData.getHomepage());
@@ -131,9 +132,14 @@ public class ContactHelper extends HelperBase {
         String home = wd.findElement(By.name("home")).getAttribute("value");
         String mobile = wd.findElement(By.name("mobile")).getAttribute("value");
         String work = wd.findElement(By.name("work")).getAttribute("value");
+        String address = wd.findElement(By.name("address")).getAttribute("value");
+        String emil1 = wd.findElement(By.name("email")).getAttribute("value");
+        String emil2 = wd.findElement(By.name("email2")).getAttribute("value");
+        String emil3 = wd.findElement(By.name("email3")).getAttribute("value");
         wd.navigate().back();
         return new ContactData().withId(contact.getId()).withFirstname(firstname).withLastname(lastname)
-                .withHome(home).withMobile(mobile).withWork(work);
+                .withHome(home).withMobile(mobile).withWork(work).withAddress(address).withEmail1(emil1)
+                .withEmail2(emil2).withEmail3(emil3);
 
     }
 
@@ -159,8 +165,10 @@ public class ContactHelper extends HelperBase {
             String firstname = element.findElement(By.xpath(".//td[3]")).getText();
             String lastname = element.findElement(By.xpath(".//td[2]")).getText();
             String allPhones = element.findElement(By.xpath(".//td[6]")).getText();
+            String allAddress = element.findElement(By.xpath(".//td[4]")).getText();
+            String allEmails = element.findElement(By.xpath(".//td[5]")).getText();
             ContactData contact = new ContactData().withId(id).withFirstname(firstname).withLastname(lastname)
-                    .withAllPhones(allPhones);
+                    .withAllPhones(allPhones).withAllAddress(allAddress).withAllEmails(allEmails);
             contactCache.add(contact);
         }
         return contactCache;

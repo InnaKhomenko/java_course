@@ -8,7 +8,6 @@ import org.testng.annotations.Test;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.testng.Assert.assertEquals;
 
 public class ContactDeletionTests extends TestBase {
 
@@ -16,7 +15,7 @@ public class ContactDeletionTests extends TestBase {
     public void ensurePreconditions() {
         app.contact().goTo();
         if (app.group().list().size() == 0) {
-            app.contact().create(new ContactData().withAddress("ukraine").withAddress2("www").withCompany("test3")
+            app.contact().create(new ContactData().withAddress("ukraine").withAddress2("www").withCompany("test3").withEmail1("inna@dd.com")
                     .withEmail2("333@rr.rtrt").withEmail3("rtttrtr@rrr.rttr").withFax("trrtrtrt").withFirstname("inna23").withGroup("mio")
                     .withHome("4455").withHomepage("ddd").withLastname("khomenko").withMobile("56565656565656").withName("zp")
                     .withFax("56565656565656").withWork("323434545454545"));

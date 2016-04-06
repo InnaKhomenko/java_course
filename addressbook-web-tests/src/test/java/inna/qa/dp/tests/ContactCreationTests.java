@@ -12,7 +12,7 @@ public class ContactCreationTests extends TestBase {
     public void testsContactCreation() {
         app.contact().goTo();
         Contacts before = app.contact().all();
-        ContactData contact = new ContactData().withAddress("ukraine").withAddress2("www").withCompany("test3")
+        ContactData contact = new ContactData().withAddress("ukraine").withAddress2("www").withCompany("test3").withEmail1("inna@dd.com")
                 .withEmail2("333@rr.rtrt").withEmail3("rtttrtr@rrr.rttr").withFax("trrtrtrt").withFirstname("inna23").withGroup("mio")
                 .withHome("4455").withHomepage("ddd").withLastname("khomenko").withMobile("56565656565656").withName("zp")
                 .withFax("56565656565656").withWork("323434545454545");
@@ -30,7 +30,7 @@ public class ContactCreationTests extends TestBase {
     public void testsBadContactCreation() {
         app.contact().goTo();
         Contacts before = app.contact().all();
-        ContactData contact = new ContactData().withAddress("ukraine'").withAddress2("www").withCompany("test3")
+        ContactData contact = new ContactData().withAddress("ukraine'").withAddress2("www").withCompany("test3").withEmail1("inna@dd.com")
                 .withEmail2("333@rr.rtrt").withEmail3("rtttrtr@rrr.rttr").withFax("trrtrtrt").withFirstname("inna23").withGroup("mio")
                 .withHome("4455").withHomepage("ddd").withLastname("khomenko").withMobile("56565656565656").withName("zp")
                 .withFax("56565656565656").withWork("323434545454545");
