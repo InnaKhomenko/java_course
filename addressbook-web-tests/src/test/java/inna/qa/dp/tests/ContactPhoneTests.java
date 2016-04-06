@@ -1,17 +1,21 @@
 package inna.qa.dp.tests;
 
 import inna.qa.dp.model.ContactData;
+import org.apache.bcel.classfile.Method;
 import org.hamcrest.CoreMatchers;
 import org.hamcrest.MatcherAssert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import java.util.Arrays;
+import java.util.stream.Collectors;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class ContactPhoneTests extends TestBase {
 
-    @BeforeMethod
+    @BeforeMethod(enabled = false)
     public void ensurePreconditions() {
         app.contact().goTo();
         if (app.group().list().size() == 0) {
@@ -29,8 +33,17 @@ public class ContactPhoneTests extends TestBase {
         ContactData contact = app.contact().all().iterator().next();
         ContactData contactInfoFromEditForm = app.contact().infoFromEditForm(contact);
 
-        assertThat(contact.getHome(), equalTo(contactInfoFromEditForm.getHome()));
-        assertThat(contact.getMobile(), equalTo(contactInfoFromEditForm.getMobile()));
-        assertThat(contact.getWork(), equalTo(contactInfoFromEditForm.getWork()));
+        assertThat(contact.getAllPhones(), equalTo(mergePhones(contactInfoFromEditForm)));
+    }
+
+    private String mergePhones(ContactData contact) {
+        return Arrays.asList(contact.getHome(), contact.getMobile(), contact.getWork())
+                .stream().filter((s) -> ! s.equals(""))
+                .map(ContactPhoneTests::cleaned)
+                .collect(Collectors.joining("\n"));
+    }
+
+    private static String cleaned(String phone) {
+        return phone.replaceAll("\\s", "").replaceAll("[-()]", "");
     }
 }

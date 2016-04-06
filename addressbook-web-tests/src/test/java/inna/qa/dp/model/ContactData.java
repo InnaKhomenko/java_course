@@ -19,6 +19,12 @@ public class ContactData {
     private String phone2;
     private String notes;
     private String group;
+    private String allPhones;
+
+    public String getAllPhones() {
+        return allPhones;
+    }
+
     int id = Integer.MAX_VALUE;
 
     public String getFirstname() {
@@ -134,6 +140,11 @@ public class ContactData {
 
     public ContactData withAddress(String address) {
         this.address = address;
+        return this;
+    }
+
+    public ContactData withAllPhones(String allPhones) {
+        this.allPhones = allPhones;
         return this;
     }
 
