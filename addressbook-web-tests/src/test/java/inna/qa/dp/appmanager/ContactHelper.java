@@ -124,6 +124,28 @@ public class ContactHelper extends HelperBase {
         return contacts;
     }
 
+    public ContactData infoFromEditForm(ContactData contact){
+        initContactModificationById(contact.getId());
+        String firstname = wd.findElement(By.name("firstname")).getAttribute("value");
+        String lastname = wd.findElement(By.name("firstname")).getAttribute("value");
+        String home = wd.findElement(By.name("firstname")).getAttribute("value");
+        String mobile = wd.findElement(By.name("firstname")).getAttribute("value");
+        String work = wd.findElement(By.name("firstname")).getAttribute("value");
+        wd.navigate().back();
+        return new ContactData().withId(contact.getId()).withFirstname(firstname).withLastname(lastname)
+                .withHome(home).withMobile(mobile).withWork(work);
+
+    }
+
+    private void initContactModificationById(int id) {
+        WebElement checkbox = wd.findElement(By.cssSelector(String.format("input[value='%s']",id)));
+        WebElement row = checkbox.findElement(By.xpath("./../.."));
+        List<WebElement> cells = row.findElements(By.tagName("td"));
+        cells.get(7).findElement(By.tagName("a")).click();
+
+       // wd.findElement(By.cssSelector(String.format("a[href='edit.php?id=%s']",id))).click();
+    }
+
     private Contacts contactCache = null;
 
     public Contacts all() {

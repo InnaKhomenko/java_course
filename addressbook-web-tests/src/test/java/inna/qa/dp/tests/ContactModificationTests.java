@@ -16,7 +16,7 @@ public class ContactModificationTests extends TestBase {
         if (app.group().list().size() == 0) {
             app.contact().create(new ContactData().withAddress("ukraine").withAddress2("www").withCompany("test3")
                     .withEmail2("333@rr.rtrt").withEmail3("rtttrtr@rrr.rttr").withFax("trrtrtrt").withFirstname("inna23").withGroup("mio")
-                    .withHome("rrttttyty").withHomepage("ddd").withLastname("khomenko").withMobile("56565656565656").withName("zp")
+                    .withHome("4455").withHomepage("ddd").withLastname("khomenko").withMobile("56565656565656").withName("zp")
                     .withFax("56565656565656").withWork("323434545454545"));
             app.contact().goTo();
         }
@@ -29,7 +29,7 @@ public class ContactModificationTests extends TestBase {
         ContactData modifiedContact = before.iterator().next();
         ContactData contact = new ContactData().withId(modifiedContact.getId()).withAddress("ukraine").withAddress2("www").withCompany("test3")
                 .withEmail2("333@rr.rtrt").withEmail3("rtttrtr@rrr.rttr").withFax("trrtrtrt").withFirstname("inna23").withGroup("mio")
-                .withHome("rrttttyty").withHomepage("ddd").withLastname("khomenko").withMobile("56565656565656").withName("zp")
+                .withHome("4455").withHomepage("ddd").withLastname("khomenko").withMobile("56565656565656").withName("zp")
                 .withFax("56565656565656").withWork("323434545454545");
         app.contact().selectModificated(contact);
         app.contact().modifyContact(contact);
