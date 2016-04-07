@@ -1,5 +1,7 @@
 package inna.qa.dp.model;
 
+import java.util.SplittableRandom;
+
 public class ContactData {
     private String firstname;
     private String name;
@@ -12,19 +14,20 @@ public class ContactData {
     private String mobile;
     private String work;
     private String fax;
+    private String phone2;
     private String email1;
     private String email2;
     private String email3;
-    private String homepage;
-    private String address2;
-    private String phone2;
     private String notes;
     private String group;
+    private String middlename;
+    private String allNames;
     private String allPhones;
     private String allAddress;
     private String allEmails;
+    private String allContent;
 
-    public String getAllEmails() {
+    public String AllEmails() {
         return allEmails;
     }
 
@@ -36,7 +39,15 @@ public class ContactData {
         return allPhones;
     }
 
+    public String getAllNames() {
+        return allNames;
+    }
+
     int id = Integer.MAX_VALUE;
+
+    public String getMiddlename() {
+        return middlename;
+    }
 
     public String getFirstname() {
         return firstname;
@@ -94,20 +105,16 @@ public class ContactData {
         return email3;
     }
 
-    public String getHomepage() {
-        return homepage;
-    }
-
-    public String getAddress2() {
-        return address2;
+    public String getNotes() {
+        return notes;
     }
 
     public String getPhone2() {
         return phone2;
     }
 
-    public String getNotes() {
-        return notes;
+    public String getAllEmails() {
+        return allEmails;
     }
 
     public int getId() {
@@ -116,6 +123,17 @@ public class ContactData {
 
     public String getGroup() {
         return group;
+    }
+
+
+    public String getAllContent() {
+        return allContent;
+
+    }
+
+    public ContactData withAllContent(String allContent) {
+        this.allContent = allContent;
+        return this;
     }
 
     public ContactData withId(int id) {
@@ -158,6 +176,11 @@ public class ContactData {
         return this;
     }
 
+    public ContactData withPhone2(String phone2) {
+        this.phone2 = phone2;
+        return this;
+    }
+
     public ContactData withAllAddress(String allAddress) {
         this.allAddress = allAddress;
         return this;
@@ -165,6 +188,11 @@ public class ContactData {
 
     public ContactData withAllPhones(String allPhones) {
         this.allPhones = allPhones;
+        return this;
+    }
+
+    public ContactData withAllNames(String allNames) {
+        this.allNames = allNames;
         return this;
     }
 
@@ -208,18 +236,8 @@ public class ContactData {
         return this;
     }
 
-    public ContactData withHomepage(String homepage) {
-        this.homepage = homepage;
-        return this;
-    }
-
-    public ContactData withAddress2(String address2) {
-        this.address2 = address2;
-        return this;
-    }
-
-    public ContactData withPhone2(String phone2) {
-        this.phone2 = phone2;
+    public ContactData withMiddlename(String middlename) {
+        this.middlename = middlename;
         return this;
     }
 

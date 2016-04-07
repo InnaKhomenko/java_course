@@ -3,14 +3,13 @@ package inna.qa.dp.appmanager;
 import inna.qa.dp.model.ContactData;
 import inna.qa.dp.model.Contacts;
 import inna.qa.dp.model.Groups;
+import inna.qa.dp.tests.ContactEmailTests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class ContactHelper extends HelperBase {
 
@@ -29,7 +28,6 @@ public class ContactHelper extends HelperBase {
 
     public void select(ContactData contact) {
         selectContactById(contact.getId());
-
     }
 
     public void selectContactById(int id) {
@@ -66,8 +64,6 @@ public class ContactHelper extends HelperBase {
         type(By.name("email"), contactData.getEmail1());
         type(By.name("email2"), contactData.getEmail2());
         type(By.name("email3"), contactData.getEmail3());
-        type(By.name("homepage"), contactData.getHomepage());
-        type(By.name("address2"), contactData.getAddress2());
         type(By.name("phone2"), contactData.getPhone2());
         type(By.name("notes"), contactData.getNotes());
         contactCache = null;
@@ -129,6 +125,7 @@ public class ContactHelper extends HelperBase {
         initContactModificationById(contact.getId());
         String firstname = wd.findElement(By.name("firstname")).getAttribute("value");
         String lastname = wd.findElement(By.name("lastname")).getAttribute("value");
+        String middlename = wd.findElement(By.name("middlename")).getAttribute("value");
         String home = wd.findElement(By.name("home")).getAttribute("value");
         String mobile = wd.findElement(By.name("mobile")).getAttribute("value");
         String work = wd.findElement(By.name("work")).getAttribute("value");
@@ -136,20 +133,62 @@ public class ContactHelper extends HelperBase {
         String emil1 = wd.findElement(By.name("email")).getAttribute("value");
         String emil2 = wd.findElement(By.name("email2")).getAttribute("value");
         String emil3 = wd.findElement(By.name("email3")).getAttribute("value");
+        String company = wd.findElement(By.name("company")).getAttribute("value");
+        String fax = wd.findElement(By.name("fax")).getAttribute("value");
         wd.navigate().back();
-        return new ContactData().withId(contact.getId()).withFirstname(firstname).withLastname(lastname)
+        return new ContactData().withId(contact.getId()).withFirstname(firstname).withLastname(lastname).withMiddlename(middlename)
                 .withHome(home).withMobile(mobile).withWork(work).withAddress(address).withEmail1(emil1)
-                .withEmail2(emil2).withEmail3(emil3);
-
+                .withEmail2(emil2).withEmail3(emil3).withCompany(company).withFax(fax);
     }
 
     private void initContactModificationById(int id) {
-       // WebElement checkbox = wd.findElement(By.cssSelector(String.format("input[value='%s']",id)));
-      //  WebElement row = checkbox.findElement(By.xpath("./../.."));
-       // List<WebElement> cells = row.findElements(By.tagName("td"));
-       // cells.get(7).findElement(By.tagName("a")).click();
-
         wd.findElement(By.cssSelector(String.format("a[href='edit.php?id=%s']",id))).click();
+    }
+
+    public ContactData infoFromDetailsForm(ContactData contact) {
+        initDatailsPageById(contact.getId());
+        String allContent = wd.findElement(By.id("content")).getText();
+        String content = "";
+        List<WebElement> elements = wd.findElements(By.cssSelector("a[target=\"_new\"]"));
+        for (WebElement element : elements) {
+            String site = element.getText();
+            content = allContent.replaceAll(site, "");
+            allContent = content;
+            content = "";
+        }
+        content = allContent.replaceAll("\\(\\)","");
+        return new ContactData().withId(contact.getId()).withAllContent(content);
+    }
+
+
+    public void mergePhones(ContactData contact) {
+        String phone = "";
+        if (!contact.getHome().equals("")) {
+            phone += String.format("H:%s", contact.getHome());
+        }
+        if (!contact.getMobile().equals("")) {
+            phone += String.format("M:%s", contact.getMobile());
+        }
+        if (!contact.getWork().equals("")) {
+            phone += String.format("W:%s", contact.getWork());
+        }
+
+        if (!contact.getFax().equals("")) {
+            phone += String.format("F:%s", contact.getFax());
+        }
+        contact.withAllPhones(phone);
+    }
+
+
+    public void mergeEmails(ContactData contact) {
+        String emailString = Arrays.asList(contact.getEmail1(), contact.getEmail2(), contact.getEmail3()).
+                stream().filter((s) -> ! s.equals("")).map(ContactEmailTests::cleaned).
+                collect(Collectors.joining("\n"));
+        contact.withAllEmails(emailString);
+    }
+
+    public void initDatailsPageById(int id) {
+        wd.findElement(By.xpath(".//a[@href=\"view.php?id=" + id + "\"]")).click();
     }
 
     private Contacts contactCache = null;
