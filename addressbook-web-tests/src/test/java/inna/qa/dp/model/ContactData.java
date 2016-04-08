@@ -1,5 +1,6 @@
 package inna.qa.dp.model;
 
+import java.io.File;
 import java.util.SplittableRandom;
 
 public class ContactData {
@@ -26,6 +27,17 @@ public class ContactData {
     private String allAddress;
     private String allEmails;
     private String allContent;
+    private File photo;
+
+    public ContactData withPhoto(File photo) {
+        this.photo = photo;
+        return this;
+    }
+
+    public File getPhoto() {
+
+        return photo;
+    }
 
     public String AllEmails() {
         return allEmails;

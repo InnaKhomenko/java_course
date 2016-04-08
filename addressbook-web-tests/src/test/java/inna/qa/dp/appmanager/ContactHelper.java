@@ -66,6 +66,7 @@ public class ContactHelper extends HelperBase {
         type(By.name("email3"), contactData.getEmail3());
         type(By.name("phone2"), contactData.getPhone2());
         type(By.name("notes"), contactData.getNotes());
+        attach(By.name("photo"), contactData.getPhoto());
         contactCache = null;
 }
 

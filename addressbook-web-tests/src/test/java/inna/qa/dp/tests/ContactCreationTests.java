@@ -3,6 +3,9 @@ package inna.qa.dp.tests;
 import inna.qa.dp.model.ContactData;
 import inna.qa.dp.model.Contacts;
 import org.testng.annotations.Test;
+
+import java.io.File;
+
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -12,8 +15,9 @@ public class ContactCreationTests extends TestBase {
     public void testsContactCreation() {
         app.contact().goTo();
         Contacts before = app.contact().all();
+        File photo = new File("src/test/resources/zacat.jpg");
         ContactData contact = new ContactData().withAddress("ukraine").withCompany("test3").withEmail1("inna@dd.com")
-                .withEmail2("333@rr.rtrt").withEmail3("rtttrtr@rrr.rttr").withFax("trrtrtrt").withFirstname("inna23").withGroup("mio")
+                .withEmail2("333@rr.rtrt").withEmail3("rtttrtr@rrr.rttr").withFax("trrtrtrt").withFirstname("inna23").withPhoto(photo)
                 .withHome("4455").withLastname("khomenko").withMobile("56565656565656").withName("zp")
                 .withFax("56565656565656").withWork("323434545454545");
         app.contact().addNew();
@@ -26,7 +30,7 @@ public class ContactCreationTests extends TestBase {
                 before.withAdded(contact.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
     }
 
-    @Test
+    @Test (enabled = false)
     public void testsBadContactCreation() {
         app.contact().goTo();
         Contacts before = app.contact().all();
@@ -42,4 +46,5 @@ public class ContactCreationTests extends TestBase {
         Contacts after = app.contact().all();
         assertThat(after, equalTo(before));
     }
+
 }
