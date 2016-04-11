@@ -40,21 +40,39 @@ public class ContactDataGenerator {
     private void save(List<ContactData> contacts, File file) throws IOException {
         Writer writer = new FileWriter(file);
         for (ContactData contact : contacts) {
-            writer.write(String.format("%s;%s;%s;%s\n", contact.getFirstname(), contact.getLastname(),
+            writer.write(String.format("%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s\n",
                     contact.getAddress(),
-                    contact.getCompany()));
+                    contact.getCompany(),
+                    contact.getEmail1(),
+                    contact.getEmail2(),
+                    contact.getEmail3(),
+                    contact.getFax(),
+                    contact.getFirstname(),
+                    contact.getHome(),
+                    contact.getLastname(),
+                    contact.getMobile(),
+                    contact.getName(),
+                    contact.getFax(),
+                    contact.getWork()
+            ));
         }
         writer.close();
     }
 
     private List<ContactData> generateContacts(int count) {
+        File photo = new File("src/test/resources/zacat.jpg");
         List<ContactData> contacts = new ArrayList<ContactData>();
         for (int i = 0; i < count; i++) {
-            contacts.add(new ContactData().withFirstname(String.format("test %s", i))
-                    .withLastname(String.format("lastname %s", i)).withAddress(String.format("Address %s", i))
-                    .withCompany(String.format("Company %s", i)));
+            contacts.add(new ContactData().withAddress(String.format("ukraine %s", i))
+                    .withCompany(String.format("test3 %s", i))
+                    .withEmail1(String.format("%sinna@gmail.com", i)).withEmail2(String.format("%s333@mail.ru", i))
+                    .withEmail3(String.format("%srtttrtr@yopmail.com", i))
+                    .withFax(String.format("trrtrtrt %s", i)).withFirstname(String.format("inna23 %s", i))
+                    .withPhoto(photo)
+                    .withHome(String.format("44225 %s", i)).withLastname(String.format("khomenko %s", i))
+                    .withMobile(String.format("56565656565656 %s", i)).withName(String.format("zp %s", i))
+                    .withFax(String.format("56565656565656 %s", i)).withWork(String.format("323434545454545 %s", i)));
         }
         return contacts;
     }
-
 }
