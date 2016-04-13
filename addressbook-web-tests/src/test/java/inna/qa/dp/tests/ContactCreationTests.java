@@ -1,7 +1,10 @@
 package inna.qa.dp.tests;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import inna.qa.dp.model.ContactData;
 import inna.qa.dp.model.Contacts;
+import inna.qa.dp.model.GroupData;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -12,6 +15,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -19,7 +23,27 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class ContactCreationTests extends TestBase {
 
     @DataProvider
-    public Iterator<Object[]> validContacts() throws IOException {
+    public Iterator<Object[]> validContactsFromJson() throws IOException {
+        List<Object[]> list = new ArrayList<Object[]>();
+        File photo = new File("src/test/resources/zacat.jpg");
+        BufferedReader reader = new BufferedReader(new FileReader("src/test/resources/contacts.json"));
+        String json ="";
+        String line = reader.readLine();
+        while (line != null) {
+            String[] split = line.split(";");
+            list.add(new Object[] {new ContactData().withAddress(split[0]).withCompany(split[1]).withEmail1(split[2])
+                    .withEmail2(split[3]).withEmail3(split[4]).withFax(split[5]).withFirstname(split[6])
+                    .withPhoto(photo).withHome(split[7]).withLastname(split[8]).withMobile(split[9]).withName(split[10])
+                    .withFax(split[11]).withWork(split[12])});
+            line = reader.readLine();
+        }
+        Gson gson = new Gson();
+        List<ContactData> contacts = gson.fromJson(json, new TypeToken<List<ContactData>>(){}.getType());
+        return contacts.stream().map((g)-> new Object[] {g}).collect(Collectors.toList()).iterator();
+    }
+
+    @DataProvider
+    public Iterator<Object[]> validContactsFromXml() throws IOException {
         List<Object[]> list = new ArrayList<Object[]>();
         File photo = new File("src/test/resources/zacat.jpg");
         BufferedReader reader = new BufferedReader(new FileReader("src/test/resources/contacts.csv"));
@@ -35,7 +59,7 @@ public class ContactCreationTests extends TestBase {
         return list.iterator();
     }
 
-    @Test(dataProvider = "validContacts")
+    @Test(dataProvider = "validContactsFromJson")
     public void testsContactCreation(ContactData contact) {
         app.contact().goTo();
         Contacts before = app.contact().all();
@@ -49,7 +73,7 @@ public class ContactCreationTests extends TestBase {
                 before.withAdded(contact.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
     }
 
-    @Test (enabled = false)
+    @Test
     public void testsBadContactCreation() {
         app.contact().goTo();
         Contacts before = app.contact().all();
