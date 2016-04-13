@@ -1,0 +1,20 @@
+<list>
+  <inna.qa.dp.model.GroupData>
+    <id>2147483647</id>
+    <name>test 0</name>
+    <header>Header 0</header>
+    <footer>Footer 0</footer>
+  </inna.qa.dp.model.GroupData>
+  <inna.qa.dp.model.GroupData>
+    <id>2147483647</id>
+    <name>test 1</name>
+    <header>Header 1</header>
+    <footer>Footer 1</footer>
+  </inna.qa.dp.model.GroupData>
+  <inna.qa.dp.model.GroupData>
+    <id>2147483647</id>
+    <name>test 2</name>
+    <header>Header 2</header>
+    <footer>Footer 2</footer>
+  </inna.qa.dp.model.GroupData>
+</list>

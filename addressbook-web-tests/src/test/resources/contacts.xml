@@ -1,0 +1,50 @@
+<list>
+  <inna.qa.dp.model.ContactData>
+    <firstname>inna23 0</firstname>
+    <name>zp 0</name>
+    <lastname>khomenko 0</lastname>
+    <company>test3 0</company>
+    <address>ukraine 0</address>
+    <home>44225 0</home>
+    <mobile>56565656565656 0</mobile>
+    <work>323434545454545 0</work>
+    <fax>56565656565656 0</fax>
+    <email1>0inna@gmail.com</email1>
+    <email2>0333@mail.ru</email2>
+    <email3>0rtttrtr@yopmail.com</email3>
+    <photo>src\test\resources\zacat.jpg</photo>
+    <id>2147483647</id>
+  </inna.qa.dp.model.ContactData>
+  <inna.qa.dp.model.ContactData>
+    <firstname>inna23 1</firstname>
+    <name>zp 1</name>
+    <lastname>khomenko 1</lastname>
+    <company>test3 1</company>
+    <address>ukraine 1</address>
+    <home>44225 1</home>
+    <mobile>56565656565656 1</mobile>
+    <work>323434545454545 1</work>
+    <fax>56565656565656 1</fax>
+    <email1>1inna@gmail.com</email1>
+    <email2>1333@mail.ru</email2>
+    <email3>1rtttrtr@yopmail.com</email3>
+    <photo>src\test\resources\zacat.jpg</photo>
+    <id>2147483647</id>
+  </inna.qa.dp.model.ContactData>
+  <inna.qa.dp.model.ContactData>
+    <firstname>inna23 2</firstname>
+    <name>zp 2</name>
+    <lastname>khomenko 2</lastname>
+    <company>test3 2</company>
+    <address>ukraine 2</address>
+    <home>44225 2</home>
+    <mobile>56565656565656 2</mobile>
+    <work>323434545454545 2</work>
+    <fax>56565656565656 2</fax>
+    <email1>2inna@gmail.com</email1>
+    <email2>2333@mail.ru</email2>
+    <email3>2rtttrtr@yopmail.com</email3>
+    <photo>src\test\resources\zacat.jpg</photo>
+    <id>2147483647</id>
+  </inna.qa.dp.model.ContactData>
+</list>

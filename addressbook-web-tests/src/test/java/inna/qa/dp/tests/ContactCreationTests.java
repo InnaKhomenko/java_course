@@ -2,7 +2,6 @@ package inna.qa.dp.tests;
 
 import inna.qa.dp.model.ContactData;
 import inna.qa.dp.model.Contacts;
-import inna.qa.dp.model.GroupData;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
