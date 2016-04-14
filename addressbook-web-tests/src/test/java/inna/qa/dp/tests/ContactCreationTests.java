@@ -2,6 +2,7 @@ package inna.qa.dp.tests;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.thoughtworks.xstream.XStream;
 import inna.qa.dp.model.ContactData;
 import inna.qa.dp.model.Contacts;
 import inna.qa.dp.model.GroupData;
@@ -24,17 +25,11 @@ public class ContactCreationTests extends TestBase {
 
     @DataProvider
     public Iterator<Object[]> validContactsFromJson() throws IOException {
-        List<Object[]> list = new ArrayList<Object[]>();
-        File photo = new File("src/test/resources/zacat.jpg");
         BufferedReader reader = new BufferedReader(new FileReader("src/test/resources/contacts.json"));
         String json ="";
         String line = reader.readLine();
         while (line != null) {
-            String[] split = line.split(";");
-            list.add(new Object[] {new ContactData().withAddress(split[0]).withCompany(split[1]).withEmail1(split[2])
-                    .withEmail2(split[3]).withEmail3(split[4]).withFax(split[5]).withFirstname(split[6])
-                    .withPhoto(photo).withHome(split[7]).withLastname(split[8]).withMobile(split[9]).withName(split[10])
-                    .withFax(split[11]).withWork(split[12])});
+            json +=line;
             line = reader.readLine();
         }
         Gson gson = new Gson();
@@ -44,19 +39,17 @@ public class ContactCreationTests extends TestBase {
 
     @DataProvider
     public Iterator<Object[]> validContactsFromXml() throws IOException {
-        List<Object[]> list = new ArrayList<Object[]>();
-        File photo = new File("src/test/resources/zacat.jpg");
-        BufferedReader reader = new BufferedReader(new FileReader("src/test/resources/contacts.csv"));
+        BufferedReader reader = new BufferedReader(new FileReader("src/test/resources/contacts.xml"));
+        String xml ="";
         String line = reader.readLine();
         while (line != null) {
-            String[] split = line.split(";");
-            list.add(new Object[] {new ContactData().withAddress(split[0]).withCompany(split[1]).withEmail1(split[2])
-                    .withEmail2(split[3]).withEmail3(split[4]).withFax(split[5]).withFirstname(split[6])
-                    .withPhoto(photo).withHome(split[7]).withLastname(split[8]).withMobile(split[9]).withName(split[10])
-                    .withFax(split[11]).withWork(split[12])});
+            xml +=line;
             line = reader.readLine();
         }
-        return list.iterator();
+        XStream xstream = new XStream();
+        xstream.processAnnotations(ContactData.class);
+        List<ContactData> contacts = (List<ContactData>) xstream.fromXML(xml);
+        return contacts.stream().map((g)-> new Object[] {g}).collect(Collectors.toList()).iterator();
     }
 
     @Test(dataProvider = "validContactsFromJson")

@@ -93,7 +93,7 @@ public class ContactDataGenerator {
     }
 
     private List<ContactData> generateContacts(int count) {
-        File photo = new File("src/test/resources/zacat.jpg");
+        //File photo = new File("src/test/resources/zacat.jpg");
         List<ContactData> contacts = new ArrayList<ContactData>();
         for (int i = 0; i < count; i++) {
             contacts.add(new ContactData().withAddress(String.format("ukraine %s", i))
@@ -101,7 +101,7 @@ public class ContactDataGenerator {
                     .withEmail1(String.format("%sinna@gmail.com", i)).withEmail2(String.format("%s333@mail.ru", i))
                     .withEmail3(String.format("%srtttrtr@yopmail.com", i))
                     .withFax(String.format("trrtrtrt %s", i)).withFirstname(String.format("inna23 %s", i))
-                    .withPhoto(photo)
+                   // .withPhoto(photo)
                     .withHome(String.format("44225 %s", i)).withLastname(String.format("khomenko %s", i))
                     .withMobile(String.format("56565656565656 %s", i)).withName(String.format("zp %s", i))
                     .withFax(String.format("56565656565656 %s", i)).withWork(String.format("323434545454545 %s", i)));
