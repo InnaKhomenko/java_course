@@ -1,0 +1,8 @@
+4733 [main] INFO  inna.qa.dp.tests.TestBase - Start test testBadGroupCreation with parametrs []
+13988 [main] INFO  inna.qa.dp.tests.TestBase - Stop test testBadGroupCreation
+14141 [main] INFO  inna.qa.dp.tests.TestBase - Start test testGroupCreation with parametrs [GroupData{name='test 0', id='2147483647'}]
+19419 [main] INFO  inna.qa.dp.tests.TestBase - Stop test testGroupCreation
+19419 [main] INFO  inna.qa.dp.tests.TestBase - Start test testGroupCreation with parametrs [GroupData{name='test 1', id='2147483647'}]
+24740 [main] INFO  inna.qa.dp.tests.TestBase - Stop test testGroupCreation
+24741 [main] INFO  inna.qa.dp.tests.TestBase - Start test testGroupCreation with parametrs [GroupData{name='test 2', id='2147483647'}]
+30113 [main] INFO  inna.qa.dp.tests.TestBase - Stop test testGroupCreation

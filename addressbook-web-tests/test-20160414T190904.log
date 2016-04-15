@@ -1,0 +1,8 @@
+4772 [main] INFO  inna.qa.dp.tests.TestBase - Start test testBadGroupCreation
+13716 [main] INFO  inna.qa.dp.tests.TestBase - Stop test testBadGroupCreation
+13860 [main] INFO  inna.qa.dp.tests.TestBase - Start test testGroupCreation
+18991 [main] INFO  inna.qa.dp.tests.TestBase - Stop test testGroupCreation
+18991 [main] INFO  inna.qa.dp.tests.TestBase - Start test testGroupCreation
+24082 [main] INFO  inna.qa.dp.tests.TestBase - Stop test testGroupCreation
+24083 [main] INFO  inna.qa.dp.tests.TestBase - Start test testGroupCreation
+29275 [main] INFO  inna.qa.dp.tests.TestBase - Stop test testGroupCreation
