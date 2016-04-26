@@ -84,7 +84,7 @@ public class ContactDataGenerator {
                         contact.getHome(),
                         contact.getLastname(),
                         contact.getMobile(),
-                        contact.getName(),
+                       // contact.getName(),
                         contact.getFax(),
                         contact.getWork()
                 ));
@@ -103,7 +103,8 @@ public class ContactDataGenerator {
                     .withFax(String.format("trrtrtrt %s", i)).withFirstname(String.format("inna23 %s", i))
                    // .withPhoto(photo)
                     .withHome(String.format("44225 %s", i)).withLastname(String.format("khomenko %s", i))
-                    .withMobile(String.format("56565656565656 %s", i)).withName(String.format("zp %s", i))
+                    .withMobile(String.format("56565656565656 %s", i))
+                    //.withName(String.format("zp %s", i))
                     .withFax(String.format("56565656565656 %s", i)).withWork(String.format("323434545454545 %s", i)));
         }
         return contacts;

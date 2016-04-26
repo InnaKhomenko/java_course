@@ -51,7 +51,7 @@ public class ContactHelper extends HelperBase {
 
     public void addInfo(ContactData contactData) {
         type(By.name("firstname"), contactData.getFirstname());
-        type(By.name("middlename"), contactData.getName());
+        type(By.name("middlename"), contactData.getMiddlename());
         type(By.name("lastname"), contactData.getLastname());
         type(By.name("nickname"), contactData.getNickname());
         type(By.name("title"), contactData.getTitle());
@@ -66,7 +66,7 @@ public class ContactHelper extends HelperBase {
         type(By.name("email3"), contactData.getEmail3());
         type(By.name("phone2"), contactData.getPhone2());
         type(By.name("notes"), contactData.getNotes());
-        attach(By.name("photo"), contactData.getPhoto());
+        //attach(By.name("photo"), contactData.getPhoto());
         contactCache = null;
 }
 
