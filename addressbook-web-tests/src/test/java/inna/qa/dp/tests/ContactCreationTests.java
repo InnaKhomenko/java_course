@@ -70,7 +70,7 @@ public class ContactCreationTests extends TestBase {
                 before.withAdded(contact.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
     }
 
-    @Test
+    @Test(enabled = false)
     public void testsBadContactCreation() {
         app.contact().goTo();
         Contacts before = app.contact().all();

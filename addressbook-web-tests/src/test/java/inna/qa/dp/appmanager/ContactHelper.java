@@ -51,7 +51,7 @@ public class ContactHelper extends HelperBase {
 
     public void addInfo(ContactData contactData) {
         type(By.name("firstname"), contactData.getFirstname());
-        type(By.name("middlename"), contactData.getMiddlename());
+       // type(By.name("middlename"), contactData.getMiddlename());
         type(By.name("lastname"), contactData.getLastname());
         type(By.name("nickname"), contactData.getNickname());
         type(By.name("title"), contactData.getTitle());
@@ -137,7 +137,8 @@ public class ContactHelper extends HelperBase {
         String company = wd.findElement(By.name("company")).getAttribute("value");
         String fax = wd.findElement(By.name("fax")).getAttribute("value");
         wd.navigate().back();
-        return new ContactData().withId(contact.getId()).withFirstname(firstname).withLastname(lastname).withMiddlename(middlename)
+        return new ContactData().withId(contact.getId()).withFirstname(firstname).withLastname(lastname)
+                //.withMiddlename(middlename)
                 .withHome(home).withMobile(mobile).withWork(work).withAddress(address).withEmail1(emil1)
                 .withEmail2(emil2).withEmail3(emil3).withCompany(company).withFax(fax);
     }
