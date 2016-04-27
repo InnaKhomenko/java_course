@@ -1,0 +1,803 @@
+408  [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+435  [main] DEBUG o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+438  [main] DEBUG o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+442  [main] DEBUG o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+568  [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.1.0.Final}
+571  [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+574  [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+599  [main] DEBUG o.h.b.j.i.s.LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD 3.0//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+599  [main] DEBUG o.h.b.j.i.s.LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+605  [main] DEBUG o.h.b.c.internal.JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+1229 [main] DEBUG o.h.service.spi.ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+1259 [main] DEBUG o.h.c.i.RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+1278 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+1316 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@6c1a5b54
+1316 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@6c1a5b54
+1317 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@6c1a5b54
+1320 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@1a6d8329
+1323 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@4145bad8
+1324 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@5ab956d7
+1328 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@2a7f1f10
+1328 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@2a7f1f10
+1328 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@2a7f1f10
+1330 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@f78a47e
+1330 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@f78a47e
+1331 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@f78a47e
+1333 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@11392934
+1334 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@11392934
+1334 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@11392934
+1335 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@53fe15ff
+1336 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@53fe15ff
+1336 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@53fe15ff
+1338 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@15bb5034
+1338 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@15bb5034
+1339 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@15bb5034
+1341 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@25ce9dc4
+1342 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@25ce9dc4
+1342 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@25ce9dc4
+1344 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@5d0bf09b
+1344 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@5d0bf09b
+1344 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@5d0bf09b
+1347 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@3b0fe47a
+1347 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@3b0fe47a
+1348 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@2034b64c
+1348 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@2034b64c
+1349 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@1cf6d1be
+1349 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@1cf6d1be
+1350 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@5149d738
+1351 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@4b013c76
+1353 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@7bba5817
+1353 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@7bba5817
+1357 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@15043a2f
+1358 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@15043a2f
+1360 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@8519cb4
+1361 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@8519cb4
+1362 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@5afa3c9
+1362 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@5afa3c9
+1362 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@5afa3c9
+1365 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@18271936
+1366 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@7a35b0f5
+1366 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@7a35b0f5
+1367 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@7a35b0f5
+1368 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@cc43f62
+1369 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@16eb3ea3
+1369 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@16eb3ea3
+1371 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@5032714f
+1371 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@5032714f
+1372 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@402c4085
+1373 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@402c4085
+1374 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@14028087
+1374 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@14028087
+1381 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@7e057f43
+1381 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@7e057f43
+1382 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@6440112d
+1383 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@7d9d0818
+1383 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@7d9d0818
+1383 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@7d9d0818
+1384 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@4d1c005e
+1385 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@4d1c005e
+1385 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@4d1c005e
+1386 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@496bc455
+1386 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@247310d0
+1386 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@247310d0
+1387 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@247310d0
+1387 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@4082ba93
+1388 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@4082ba93
+1388 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@4082ba93
+1389 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@43df23d3
+1390 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@73eb439a
+1394 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@536f2a7e
+1394 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@536f2a7e
+1395 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@70cf32e3
+1400 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@eadd4fb
+1401 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@eadd4fb
+1405 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@480d3575
+1406 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@480d3575
+1406 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@26abb146
+1407 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@431cd9b2
+1408 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@57bc27f5
+1411 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@55de24cc
+1411 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@55de24cc
+1411 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@69c81773
+1411 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@4d14b6c2
+1411 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@7e990ed7
+1412 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@c05fddc
+1412 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@25df00a0
+1412 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@4d15107f
+1412 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@7b4c50bc
+1412 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@5884a914
+1421 [main] WARN  org.hibernate.orm.connections - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+1425 [main] INFO  org.hibernate.orm.connections - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/addressbook?useSSL=false&serverTimezone=UTC]
+1425 [main] INFO  org.hibernate.orm.connections - HHH10001001: Connection properties: {user=root, password=}
+1425 [main] INFO  org.hibernate.orm.connections - HHH10001003: Autocommit mode: false
+1429 [main] DEBUG o.h.e.j.c.i.DriverManagerConnectionProviderImpl - Initializing Connection pool with 1 Connections
+1429 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 1 (min=1)
+1611 [main] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 5.5.5-10.1.9-MariaDB
+      major : 5
+      minor : 5
+1611 [main] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector Java
+    version : mysql-connector-java-6.0.2 ( Revision: c6da0fe501ad43d4ed6483b60ea796dc9fbe2d7b )
+      major : 6
+      minor : 0
+1611 [main] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - JDBC version : 4.1
+1627 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+1649 [main] DEBUG o.h.e.j.c.i.StandardRefCursorSupport - Unexpected error trying to gauge level of JDBC REF_CURSOR support : null
+1685 [main] DEBUG o.h.e.j.e.s.IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+1688 [main] DEBUG o.h.e.j.e.s.IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+1742 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+1743 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+1744 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+1745 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+1745 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+1747 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+1748 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+1750 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+1751 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+1752 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+1753 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+1754 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+1754 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+1756 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+1813 [main] DEBUG o.h.boot.model.relational.Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+1850 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: inna.qa.dp.model.GroupData
+1875 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+1881 [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name GroupData
+1884 [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity inna.qa.dp.model.GroupData on table group_list
+1946 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(group_list), mappingColumn=group_id, insertable=true, updatable=true, unique=false}
+1950 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+1952 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [inna.qa.dp.model.GroupData:id]
+1955 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+1958 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+1964 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(group_list), mappingColumn=group_footer, insertable=true, updatable=true, unique=false}
+1964 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property footer with lazy=false
+1964 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [inna.qa.dp.model.GroupData:footer]
+1964 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for footer
+1964 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property footer
+1965 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(group_list), mappingColumn=group_header, insertable=true, updatable=true, unique=false}
+1965 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property header with lazy=false
+1965 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [inna.qa.dp.model.GroupData:header]
+1965 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for header
+1965 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property header
+1966 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(group_list), mappingColumn=group_name, insertable=true, updatable=true, unique=false}
+1966 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property name with lazy=false
+1966 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [inna.qa.dp.model.GroupData:name]
+1966 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for name
+1966 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property name
+1968 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+1968 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for footer
+1968 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for header
+1968 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for name
+1969 [main] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [group_id] to be non-null as it is part of the primary key for table [group_list]
+2003 [main] DEBUG o.h.internal.SessionFactoryImpl - Building session factory
+2005 [main] DEBUG org.hibernate.cfg.Settings - SessionFactory name : null
+2005 [main] DEBUG org.hibernate.cfg.Settings - Automatic flush during beforeCompletion(): disabled
+2006 [main] DEBUG org.hibernate.cfg.Settings - Automatic session close at end of transaction: disabled
+2006 [main] DEBUG org.hibernate.cfg.Settings - Statistics: disabled
+2006 [main] DEBUG org.hibernate.cfg.Settings - Deleted entity synthetic identifier rollback: disabled
+2006 [main] DEBUG org.hibernate.cfg.Settings - Default entity-mode: pojo
+2006 [main] DEBUG org.hibernate.cfg.Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2006 [main] DEBUG org.hibernate.cfg.Settings - Allow initialization of lazy state outside session : disabled
+2006 [main] DEBUG org.hibernate.cfg.Settings - Using BatchFetchStyle : LEGACY
+2006 [main] DEBUG org.hibernate.cfg.Settings - Default batch fetch size: -1
+2006 [main] DEBUG org.hibernate.cfg.Settings - Maximum outer join fetch depth: 2
+2006 [main] DEBUG org.hibernate.cfg.Settings - Default null ordering: NONE
+2007 [main] DEBUG org.hibernate.cfg.Settings - Order SQL updates by primary key: disabled
+2007 [main] DEBUG org.hibernate.cfg.Settings - Order SQL inserts for batching: disabled
+2007 [main] DEBUG org.hibernate.cfg.Settings - multi-tenancy strategy : NONE
+2007 [main] DEBUG org.hibernate.cfg.Settings - JTA Track by Thread: enabled
+2007 [main] DEBUG org.hibernate.cfg.Settings - Query language substitutions: {}
+2007 [main] DEBUG org.hibernate.cfg.Settings - JPA query language strict compliance: disabled
+2007 [main] DEBUG org.hibernate.cfg.Settings - Named query checking : enabled
+2007 [main] DEBUG org.hibernate.cfg.Settings - Second-level cache: enabled
+2007 [main] DEBUG org.hibernate.cfg.Settings - Second-level query cache: disabled
+2007 [main] DEBUG org.hibernate.cfg.Settings - Second-level query cache factory: org.hibernate.cache.internal.StandardQueryCacheFactory@686449f9
+2007 [main] DEBUG org.hibernate.cfg.Settings - Second-level cache region prefix: null
+2007 [main] DEBUG org.hibernate.cfg.Settings - Optimize second-level cache for minimal puts: disabled
+2008 [main] DEBUG org.hibernate.cfg.Settings - Structured second-level cache entries: disabled
+2008 [main] DEBUG org.hibernate.cfg.Settings - Second-level cache direct-reference entries: disabled
+2008 [main] DEBUG org.hibernate.cfg.Settings - Automatic eviction of collection cache: disabled
+2008 [main] DEBUG org.hibernate.cfg.Settings - JDBC batch size: 15
+2008 [main] DEBUG org.hibernate.cfg.Settings - JDBC batch updates for versioned data: enabled
+2008 [main] DEBUG org.hibernate.cfg.Settings - Scrollable result sets: enabled
+2008 [main] DEBUG org.hibernate.cfg.Settings - Wrap result sets: disabled
+2008 [main] DEBUG org.hibernate.cfg.Settings - JDBC3 getGeneratedKeys(): enabled
+2008 [main] DEBUG org.hibernate.cfg.Settings - JDBC result set fetch size: null
+2008 [main] DEBUG org.hibernate.cfg.Settings - Connection release mode: ON_CLOSE
+2008 [main] DEBUG org.hibernate.cfg.Settings - Generate SQL with comments: disabled
+2064 [main] DEBUG o.h.internal.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+2064 [main] DEBUG o.h.internal.SessionFactoryImpl - Instantiating session factory with properties: {java.vendor=Oracle Corporation, show_sql=true, sun.java.launcher=SUN_STANDARD, hibernate.connection.url=jdbc:mysql://localhost:3306/addressbook?useSSL=false&serverTimezone=UTC, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.name=Windows 10, hbm2ddl.auto=validate, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_73\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_73\jre\classes, sun.desktop=windows, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.8.0_73-b02, hibernate.cache.provider_class=org.hibernate.cache.internal.NoCacheProvider, user.name=Inna, connection.driver_class=com.mysql.jdbc.Driver, idea.launcher.bin.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.4\bin, user.language=ru, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_73\jre\bin, dialect=org.hibernate.dialect.MySQLDialect, java.version=1.8.0_73, user.timezone=Europe/Moscow, sun.arch.data.model=64, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_73\jre\lib\endorsed, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1251, file.encoding.pkg=sun.io, file.separator=\, java.specification.name=Java Platform API Specification, java.class.version=52.0, user.country=RU, connection.url=jdbc:mysql://localhost:3306/addressbook?useSSL=false&serverTimezone=UTC, java.home=C:\Program Files\Java\jdk1.8.0_73\jre, java.vm.info=mixed mode, os.version=10.0, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@30f5a68a, path.separator=;, connection.password=, java.vm.version=25.73-b02, hibernate.connection.password=, user.variant=, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.windows.WToolkit, hibernate.connection.username=root, user.script=, user.home=C:\Users\Inna, java.specification.vendor=Oracle Corporation, hibernate.hbm2ddl.auto=validate, java.library.path=C:\Program Files\Java\jdk1.8.0_73\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Java\jdk1.8.0_73\bin;C:\Tools;., java.vendor.url=http://java.oracle.com/, hibernate.connection.driver_class=com.mysql.jdbc.Driver, connection.username=root, java.vm.vendor=Oracle Corporation, hibernate.dialect=org.hibernate.dialect.MySQLDialect, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=com.intellij.rt.execution.application.AppMain org.testng.RemoteTestNGStarter -port 64155 -usedefaultlisteners false -socket64156 @w@C:\Users\Inna\AppData\Local\Temp\idea_working_dirs_testng19.tmp -temp C:\Users\Inna\AppData\Local\Temp\idea_testng19.tmp, java.class.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.4\lib\idea_rt.jar;C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.4\plugins\testng\lib\testng-plugin.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_73\jre\lib\rt.jar;D:\java_qa\java_course\addressbook-web-tests\build\classes\test;D:\java_qa\java_course\addressbook-web-tests\build\resources\test;D:\java_qa\java_course\addressbook-web-tests\build\resources\main;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.testng\testng\6.9.10\6feb3e964aeb7097aff30c372aac3ec0f8d87ede\testng-6.9.10.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-java\2.52.0\6e2b24fd66bca04bac14c03e54ad7dabf34d0db0\selenium-java-2.52.0.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\com.beust\jcommander\1.48\bfcb96281ea3b59d626704f74bc6d625ff51cbce\jcommander-1.48.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.beanshell\bsh\2.0b4\a05f0a0feefa8d8467ac80e16e7de071489f0d9c\bsh-2.0b4.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-chrome-driver\2.52.0\fe32be8d32001398689d17544241fbb879f5705c\selenium-chrome-driver-2.52.0.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-edge-driver\2.52.0\c21d89b23e926fe1c29ae76ffa312239615e7324\selenium-edge-driver-2.52.0.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-htmlunit-driver\2.52.0\b9945a26ec2518b9d094e43e7d47b8e9146d5d39\selenium-htmlunit-driver-2.52.0.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-firefox-driver\2.52.0\4fd5b76728c52b106aa2d60df89a3bfcc74691c3\selenium-firefox-driver-2.52.0.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-ie-driver\2.52.0\2b631c14ffe2d02408b195693aa7bcc55f28f8a9\selenium-ie-driver-2.52.0.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-safari-driver\2.52.0\a377890cd15973e529e5935786d5f440b5b845f\selenium-safari-driver-2.52.0.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-support\2.52.0\d59fb1d85e0cacd03eddb13e776da33d75281339\selenium-support-2.52.0.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.webbitserver\webbit\0.4.14\3bf3f17fe41fb34c4d98663957ec0795a6b6653e\webbit-0.4.14.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-leg-rc\2.52.0\acdecc78f7b03a59097a0ff5c39dc61c02002278\selenium-leg-rc-2.52.0.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-remote-driver\2.52.0\a4040ffce1a58f6edd5a704d84d6432cbcbaaede\selenium-remote-driver-2.52.0.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\commons-io\commons-io\2.4\b1b6ea3b7e4aa4f492509a4952029cd8e48019ad\commons-io-2.4.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-exec\1.3\8dfb9facd0830a27b1b5f29f84593f0aeee7773b\commons-exec-1.3.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\net.sourceforge.htmlunit\htmlunit\2.18\ec30f76601f7010abbc09cc8ec401cb183916371\htmlunit-2.18.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\commons-collections\commons-collections\3.2.2\8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5\commons-collections-3.2.2.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient\4.5.1\7e3cecc566df91338c6c67883b89ddd05a17db43\httpclient-4.5.1.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\jna\4.1.0\1c12d070e602efd8021891cdd7fd18bc129372d4\jna-4.1.0.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\jna-platform\4.1.0\23457ad1cf75c2c16763330de5565a0e67b4bc0a\jna-platform-4.1.0.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\io.netty\netty\3.5.2.Final\e6fb74a0699abe108969b2ec1f269391169a0426\netty-3.5.2.Final.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\cglib\cglib-nodep\2.1_3\58d3be5953547c0019e5704d6ed4ffda3b0c7c66\cglib-nodep-2.1_3.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-api\2.52.0\1c046fd54082863ebb50c76201050073210a6a6a\selenium-api-2.52.0.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\19.0\6ce200f6b23222af3d8abb6b6459e6c44f4bb0e9\guava-19.0.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\xalan\xalan\2.7.2\d55d3f02a56ec4c25695fe67e1334ff8c2ecea23\xalan-2.7.2.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-lang3\3.4\5fe28b9518e58819180a43a850fbc0dd24b7c050\commons-lang3-3.4.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpmime\4.5\7bdb321e86724b16af6134a0fd22fec649eda971\httpmime-4.5.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\commons-codec\commons-codec\1.10\4b95f4897fa13f2cd904aee711aeafc0c5295cd8\commons-codec-1.10.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\net.sourceforge.htmlunit\htmlunit-core-js\2.17\4316d68f449d42f69faf4ee255aa31b03e4f7dd5\htmlunit-core-js-2.17.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\xerces\xercesImpl\2.11.0\9bb329db1cfc4e22462c9d6b43a8432f5850e92c\xercesImpl-2.11.0.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\net.sourceforge.nekohtml\nekohtml\1.9.22\4f54af68ecb345f2453fb6884672ad08414154e3\nekohtml-1.9.22.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\net.sourceforge.cssparser\cssparser\0.9.16\3f751904d467537b8ee99c612e69d4e79d6271cf\cssparser-0.9.16.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\commons-logging\commons-logging\1.2\4bfc12adfe4842bf07b657f0369c4cb522955686\commons-logging-1.2.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty.websocket\websocket-client\9.2.12.v20150709\79e439a426514af24e693c78662cb2b4db2be3c6\websocket-client-9.2.12.v20150709.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\xalan\serializer\2.7.2\24247f3bb052ee068971393bdb83e04512bb1c3c\serializer-2.7.2.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\xml-apis\xml-apis\1.4.01\3789d9fada2d3d458c4ba2de349d48780f381ee3\xml-apis-1.4.01.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.w3c.css\sac\1.3\cdb2dcb4e22b83d6b32b93095f644c3462739e82\sac-1.3.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-util\9.2.12.v20150709\d99d38adfdb5ec677643f04fa862554b0bb8b42e\jetty-util-9.2.12.v20150709.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-io\9.2.12.v20150709\c02e9e303d231a589e0c8866c1ee89bcdeb40a55\jetty-io-9.2.12.v20150709.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty.websocket\websocket-common\9.2.12.v20150709\97219331c7ec90b2964b3a50d86008e1f16f5638\websocket-common-9.2.12.v20150709.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty.websocket\websocket-api\9.2.12.v20150709\6bb55e8ef1a385e40f144a240492915b89914cfb\websocket-api-9.2.12.v20150709.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.4.3\e876a79d561e5c6207b78d347e198c8c4531a5e5\httpcore-4.4.3.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.hamcrest\java-hamcrest\2.0.0.0\f1c8853ade0ecf707f5a261c830e98893983813\java-hamcrest-2.0.0.0.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\com.thoughtworks.xstream\xstream\1.4.9\c43f6e6bfa79b56e04a8898a923c3cf7144dd460\xstream-1.4.9.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\xmlpull\xmlpull\1.1.3.1\2b8e230d2ab644e4ecaa94db7cdedbc40c805dfa\xmlpull-1.1.3.1.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\xpp3\xpp3_min\1.1.4c\19d4e90b43059058f6e056f794f0ea4030d60b86\xpp3_min-1.1.4c.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.2\f1bc476cc167b18e66c297df599b2377131a8947\gson-2.6.2.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-classic\1.1.7\9865cf6994f9ff13fce0bf93f2054ef6c65bb462\logback-classic-1.1.7.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-core\1.1.7\7873092d39ef741575ca91378a6a21c388363ac8\logback-core-1.1.7.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.7.20\867d63093eff0a0cb527bf13d397d850af3dcae3\slf4j-api-1.7.20.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\mysql\mysql-connector-java\6.0.2\5ded70a4a41a8a7d869765d955a811b7b725771d\mysql-connector-java-6.0.2.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.hibernate\hibernate-core\5.1.0.Final\1b5ac619df76cfd67222ca7cddcee6b0a5db8d0c\hibernate-core-5.1.0.Final.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.jboss.logging\jboss-logging\3.3.0.Final\3616bb87707910296e2c195dc016287080bba5af\jboss-logging-3.3.0.Final.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.hibernate.javax.persistence\hibernate-jpa-2.1-api\1.0.0.Final\5e731d961297e5a07290bfaf3db1fbc8bbbf405a\hibernate-jpa-2.1-api-1.0.0.Final.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.javassist\javassist\3.20.0-GA\a9cbcdfb7e9f86fbc74d3afae65f2248bfbf82a0\javassist-3.20.0-GA.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\antlr\antlr\2.7.7\83cd2cd674a217ade95a4bb83a8a14f351f48bd0\antlr-2.7.7.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.apache.geronimo.specs\geronimo-jta_1.1_spec\1.1.1\aabab3165b8ea936b9360abbf448459c0d04a5a4\geronimo-jta_1.1_spec-1.1.1.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.jboss\jandex\2.0.0.Final\3e899258936f94649c777193e1be846387ed54b3\jandex-2.0.0.Final.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\com.fasterxml\classmate\1.3.0\183407ff982e9375f1a1c4a51ed0a9307c598fc7\classmate-1.3.0.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\dom4j\dom4j\1.6.1\5d3ccc056b6f056dbf0dddfdf43894b9065a8f94\dom4j-1.6.1.jar;C:\Users\Inna\.gradle\caches\modules-2\files-2.1\org.hibernate.common\hibernate-commons-annotations\5.0.1.Final\71e1cff3fcb20d3b3af4f3363c3ddb24d33c6879\hibernate-commons-annotations-5.0.1.Final.jar;C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.4\plugins\testng\lib\jcommander.jar, hibernate.bytecode.use_reflection_optimizer=false, idea.launcher.port=7532, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.8, sun.cpu.endian=little, sun.os.patch.level=, connection.pool_size=1, java.io.tmpdir=C:\Users\Inna\AppData\Local\Temp\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, os.arch=amd64, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_73\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, user.dir=D:\java_qa\java_course\addressbook-web-tests, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, cache.provider_class=org.hibernate.cache.internal.NoCacheProvider, file.encoding=UTF-8, idea.testng.sm_runner=, java.specification.version=1.8, hibernate.connection.pool_size=1, hibernate.show_sql=true}
+2079 [main] DEBUG o.h.secure.spi.JaccIntegrator - Skipping JACC integration as it was not enabled
+2123 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [inna.qa.dp.model.GroupData] is safe
+2123 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : inna.qa.dp.model.GroupData
+2143 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [inna.qa.dp.model.GroupData] is safe
+2144 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : inna.qa.dp.model.GroupData
+2274 [main] DEBUG o.h.p.e.AbstractEntityPersister - Static SQL for entity: inna.qa.dp.model.GroupData
+2274 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Version select: select group_id from group_list where group_id =?
+2274 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Snapshot select: select groupdata_.group_id, groupdata_.group_footer as group_fo2_0_, groupdata_.group_header as group_he3_0_, groupdata_.group_name as group_na4_0_ from group_list groupdata_ where groupdata_.group_id=?
+2274 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Insert 0: insert into group_list (group_footer, group_header, group_name, group_id) values (?, ?, ?, ?)
+2274 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Update 0: update group_list set group_footer=?, group_header=?, group_name=? where group_id=?
+2274 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Delete 0: delete from group_list where group_id=?
+2307 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@16fb356]
+2309 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+2309 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+2309 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+2309 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2344 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2354 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=inna.qa.dp.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=inna.qa.dp.model.GroupData, querySpaceUid=<gen:0>, path=inna.qa.dp.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=inna.qa.dp.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_0_0_}
+
+2365 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity inna.qa.dp.model.GroupData [NONE]: select groupdata0_.group_id as group_id1_0_0_, groupdata0_.group_footer as group_fo2_0_0_, groupdata0_.group_header as group_he3_0_0_, groupdata0_.group_name as group_na4_0_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+2365 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@641856]
+2365 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+2365 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+2365 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+2368 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2368 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2369 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=inna.qa.dp.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=inna.qa.dp.model.GroupData, querySpaceUid=<gen:0>, path=inna.qa.dp.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=inna.qa.dp.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_0_0_}
+
+2369 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity inna.qa.dp.model.GroupData [READ]: select groupdata0_.group_id as group_id1_0_0_, groupdata0_.group_footer as group_fo2_0_0_, groupdata0_.group_header as group_he3_0_0_, groupdata0_.group_name as group_na4_0_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+2369 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2f66e802]
+2369 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+2375 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+2375 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+2375 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2378 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2380 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=inna.qa.dp.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=inna.qa.dp.model.GroupData, querySpaceUid=<gen:0>, path=inna.qa.dp.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=inna.qa.dp.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_0_0_}
+
+2380 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity inna.qa.dp.model.GroupData [UPGRADE]: select groupdata0_.group_id as group_id1_0_0_, groupdata0_.group_footer as group_fo2_0_0_, groupdata0_.group_header as group_he3_0_0_, groupdata0_.group_name as group_na4_0_0_ from group_list groupdata0_ where groupdata0_.group_id=? for update
+2381 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@76318a7d]
+2381 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+2381 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+2381 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+2381 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2382 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2383 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=inna.qa.dp.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=inna.qa.dp.model.GroupData, querySpaceUid=<gen:0>, path=inna.qa.dp.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=inna.qa.dp.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_0_0_}
+
+2383 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity inna.qa.dp.model.GroupData [UPGRADE_NOWAIT]: select groupdata0_.group_id as group_id1_0_0_, groupdata0_.group_footer as group_fo2_0_0_, groupdata0_.group_header as group_he3_0_0_, groupdata0_.group_name as group_na4_0_0_ from group_list groupdata0_ where groupdata0_.group_id=? for update
+2384 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3277e499]
+2384 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+2384 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+2384 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+2384 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2384 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2385 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=inna.qa.dp.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=inna.qa.dp.model.GroupData, querySpaceUid=<gen:0>, path=inna.qa.dp.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=inna.qa.dp.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_0_0_}
+
+2385 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity inna.qa.dp.model.GroupData [UPGRADE_SKIPLOCKED]: select groupdata0_.group_id as group_id1_0_0_, groupdata0_.group_footer as group_fo2_0_0_, groupdata0_.group_header as group_he3_0_0_, groupdata0_.group_name as group_na4_0_0_ from group_list groupdata0_ where groupdata0_.group_id=? for update
+2385 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@22c01ab0]
+2389 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+2389 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+2389 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+2390 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2390 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2390 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=inna.qa.dp.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=inna.qa.dp.model.GroupData, querySpaceUid=<gen:0>, path=inna.qa.dp.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=inna.qa.dp.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_0_0_}
+
+2390 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity inna.qa.dp.model.GroupData [FORCE]: select groupdata0_.group_id as group_id1_0_0_, groupdata0_.group_footer as group_fo2_0_0_, groupdata0_.group_header as group_he3_0_0_, groupdata0_.group_name as group_na4_0_0_ from group_list groupdata0_ where groupdata0_.group_id=? for update
+2390 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4c4d362a]
+2391 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+2391 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+2391 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+2391 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2391 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2392 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=inna.qa.dp.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=inna.qa.dp.model.GroupData, querySpaceUid=<gen:0>, path=inna.qa.dp.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=inna.qa.dp.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_0_0_}
+
+2392 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity inna.qa.dp.model.GroupData [PESSIMISTIC_READ]: select groupdata0_.group_id as group_id1_0_0_, groupdata0_.group_footer as group_fo2_0_0_, groupdata0_.group_header as group_he3_0_0_, groupdata0_.group_name as group_na4_0_0_ from group_list groupdata0_ where groupdata0_.group_id=? lock in share mode
+2392 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@76b74e9c]
+2392 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+2392 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+2392 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+2393 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2393 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2393 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=inna.qa.dp.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=inna.qa.dp.model.GroupData, querySpaceUid=<gen:0>, path=inna.qa.dp.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=inna.qa.dp.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_0_0_}
+
+2393 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity inna.qa.dp.model.GroupData [PESSIMISTIC_WRITE]: select groupdata0_.group_id as group_id1_0_0_, groupdata0_.group_footer as group_fo2_0_0_, groupdata0_.group_header as group_he3_0_0_, groupdata0_.group_name as group_na4_0_0_ from group_list groupdata0_ where groupdata0_.group_id=? for update
+2393 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@8ab78bc]
+2394 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+2394 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+2394 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+2394 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2394 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2394 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=inna.qa.dp.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=inna.qa.dp.model.GroupData, querySpaceUid=<gen:0>, path=inna.qa.dp.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=inna.qa.dp.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_0_0_}
+
+2394 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity inna.qa.dp.model.GroupData [PESSIMISTIC_FORCE_INCREMENT]: select groupdata0_.group_id as group_id1_0_0_, groupdata0_.group_footer as group_fo2_0_0_, groupdata0_.group_header as group_he3_0_0_, groupdata0_.group_name as group_na4_0_0_ from group_list groupdata0_ where groupdata0_.group_id=? for update
+2395 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@16afbd92]
+2395 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+2395 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+2395 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+2395 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2395 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2396 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=inna.qa.dp.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=inna.qa.dp.model.GroupData, querySpaceUid=<gen:0>, path=inna.qa.dp.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=inna.qa.dp.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_0_0_}
+
+2396 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity inna.qa.dp.model.GroupData [OPTIMISTIC]: select groupdata0_.group_id as group_id1_0_0_, groupdata0_.group_footer as group_fo2_0_0_, groupdata0_.group_header as group_he3_0_0_, groupdata0_.group_name as group_na4_0_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+2396 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7fe083b1]
+2396 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+2396 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+2396 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+2396 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2396 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2397 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=inna.qa.dp.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=inna.qa.dp.model.GroupData, querySpaceUid=<gen:0>, path=inna.qa.dp.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=inna.qa.dp.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_0_0_}
+
+2397 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity inna.qa.dp.model.GroupData [OPTIMISTIC_FORCE_INCREMENT]: select groupdata0_.group_id as group_id1_0_0_, groupdata0_.group_footer as group_fo2_0_0_, groupdata0_.group_header as group_he3_0_0_, groupdata0_.group_name as group_na4_0_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+2419 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity inna.qa.dp.model.GroupData: select groupdata0_.group_id as group_id1_0_0_, groupdata0_.group_footer as group_fo2_0_0_, groupdata0_.group_header as group_he3_0_0_, groupdata0_.group_name as group_na4_0_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+2419 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity inna.qa.dp.model.GroupData: select groupdata0_.group_id as group_id1_0_0_, groupdata0_.group_footer as group_fo2_0_0_, groupdata0_.group_header as group_he3_0_0_, groupdata0_.group_name as group_na4_0_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+2419 [main] DEBUG o.h.internal.SessionFactoryImpl - Instantiated session factory
+2490 [main] DEBUG o.h.e.t.j.p.i.JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+2491 [main] DEBUG o.h.e.t.j.p.i.JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+2495 [main] DEBUG o.h.e.t.j.p.i.StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2521 [main] DEBUG o.h.internal.NamedQueryRepository - Checking 0 named HQL queries
+2521 [main] DEBUG o.h.internal.NamedQueryRepository - Checking 0 named SQL queries
+2540 [main] DEBUG o.h.internal.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@2d35442b
+2542 [main] DEBUG o.h.internal.SessionFactoryRegistry - Registering SessionFactory: b97b69f0-edfb-45c1-9229-0b660d7029dd (<unnamed>)
+2542 [main] DEBUG o.h.internal.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+2656 [main] DEBUG o.h.s.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+2657 [main] DEBUG o.h.e.t.internal.TransactionImpl - begin
+2693 [main] DEBUG o.h.h.i.QueryTranslatorFactoryInitiator - QueryTranslatorFactory : org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@39fc6b2c
+2693 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2762 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - parse() - HQL: from inna.qa.dp.model.GroupData
+2786 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       \-[FROM] Node: 'from'
+          \-[RANGE] Node: 'RANGE'
+             \-[DOT] Node: '.'
+                +-[DOT] Node: '.'
+                |  +-[DOT] Node: '.'
+                |  |  +-[DOT] Node: '.'
+                |  |  |  +-[IDENT] Node: 'inna'
+                |  |  |  \-[IDENT] Node: 'qa'
+                |  |  \-[IDENT] Node: 'dp'
+                |  \-[IDENT] Node: 'model'
+                \-[IDENT] Node: 'GroupData'
+
+2786 [main] DEBUG o.h.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+2824 [main] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+2846 [main] DEBUG o.h.h.internal.ast.tree.FromElement - FromClause{level=1} : inna.qa.dp.model.GroupData (<no alias>) -> groupdata0_
+2846 [main] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+2846 [main] DEBUG o.h.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( FromClause{level=1} group_list groupdata0_ ) )
+2860 [main] DEBUG o.h.hql.internal.ast.HqlSqlWalker - Derived SELECT clause created.
+2868 [main] DEBUG o.h.h.i.ast.util.JoinProcessor - Using FROM fragment [group_list groupdata0_]
+2868 [main] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+2868 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (group_list)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'groupdata0_.group_id as group_id1_0_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=group_list,tableAlias=groupdata0_,origin=null,columns={,className=inna.qa.dp.model.GroupData}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'groupdata0_.group_footer as group_fo2_0_, groupdata0_.group_header as group_he3_0_, groupdata0_.group_name as group_na4_0_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[groupdata0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'group_list groupdata0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=group_list,tableAlias=groupdata0_,origin=null,columns={,className=inna.qa.dp.model.GroupData}}
+
+2869 [main] DEBUG o.h.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+2879 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - HQL: from inna.qa.dp.model.GroupData
+2879 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - SQL: select groupdata0_.group_id as group_id1_0_, groupdata0_.group_footer as group_fo2_0_, groupdata0_.group_header as group_he3_0_, groupdata0_.group_name as group_na4_0_ from group_list groupdata0_
+2879 [main] DEBUG o.h.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+2911 [main] DEBUG org.hibernate.SQL - select groupdata0_.group_id as group_id1_0_, groupdata0_.group_footer as group_fo2_0_, groupdata0_.group_header as group_he3_0_, groupdata0_.group_name as group_na4_0_ from group_list groupdata0_
+2935 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+2940 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#82]
+2957 [main] DEBUG org.hibernate.loader.Loader - Result set row: 1
+2958 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#85]
+2958 [main] DEBUG org.hibernate.loader.Loader - Result set row: 2
+2959 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#90]
+2959 [main] DEBUG org.hibernate.loader.Loader - Result set row: 3
+2959 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#91]
+2959 [main] DEBUG org.hibernate.loader.Loader - Result set row: 4
+2959 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#113]
+2959 [main] DEBUG org.hibernate.loader.Loader - Result set row: 5
+2960 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#114]
+2960 [main] DEBUG org.hibernate.loader.Loader - Result set row: 6
+2960 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#115]
+2960 [main] DEBUG org.hibernate.loader.Loader - Result set row: 7
+2960 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#116]
+2960 [main] DEBUG org.hibernate.loader.Loader - Result set row: 8
+2960 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#117]
+2960 [main] DEBUG org.hibernate.loader.Loader - Result set row: 9
+2960 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#118]
+2961 [main] DEBUG org.hibernate.loader.Loader - Result set row: 10
+2961 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#119]
+2961 [main] DEBUG org.hibernate.loader.Loader - Result set row: 11
+2961 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#120]
+2961 [main] DEBUG org.hibernate.loader.Loader - Result set row: 12
+2961 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#121]
+2961 [main] DEBUG org.hibernate.loader.Loader - Result set row: 13
+2961 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#122]
+2962 [main] DEBUG org.hibernate.loader.Loader - Result set row: 14
+2962 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#123]
+2962 [main] DEBUG org.hibernate.loader.Loader - Result set row: 15
+2962 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#124]
+2963 [main] DEBUG org.hibernate.loader.Loader - Result set row: 16
+2963 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#126]
+2963 [main] DEBUG org.hibernate.loader.Loader - Result set row: 17
+2963 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#127]
+2963 [main] DEBUG org.hibernate.loader.Loader - Result set row: 18
+2963 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#128]
+2963 [main] DEBUG org.hibernate.loader.Loader - Result set row: 19
+2964 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#130]
+2964 [main] DEBUG org.hibernate.loader.Loader - Result set row: 20
+2964 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#131]
+2964 [main] DEBUG org.hibernate.loader.Loader - Result set row: 21
+2964 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#132]
+2964 [main] DEBUG org.hibernate.loader.Loader - Result set row: 22
+2964 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#133]
+2964 [main] DEBUG org.hibernate.loader.Loader - Result set row: 23
+2965 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#135]
+2965 [main] DEBUG org.hibernate.loader.Loader - Result set row: 24
+2965 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#136]
+2965 [main] DEBUG org.hibernate.loader.Loader - Result set row: 25
+2965 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#137]
+2965 [main] DEBUG org.hibernate.loader.Loader - Result set row: 26
+2966 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#138]
+2966 [main] DEBUG org.hibernate.loader.Loader - Result set row: 27
+2966 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#139]
+2966 [main] DEBUG org.hibernate.loader.Loader - Result set row: 28
+2966 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#140]
+2966 [main] DEBUG org.hibernate.loader.Loader - Result set row: 29
+2966 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#142]
+2967 [main] DEBUG org.hibernate.loader.Loader - Result set row: 30
+2967 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#143]
+2967 [main] DEBUG org.hibernate.loader.Loader - Result set row: 31
+2967 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#144]
+2967 [main] DEBUG org.hibernate.loader.Loader - Result set row: 32
+2967 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#145]
+2967 [main] DEBUG org.hibernate.loader.Loader - Result set row: 33
+2967 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#146]
+2967 [main] DEBUG org.hibernate.loader.Loader - Result set row: 34
+2968 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#147]
+2968 [main] DEBUG org.hibernate.loader.Loader - Result set row: 35
+2968 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#148]
+2968 [main] DEBUG org.hibernate.loader.Loader - Result set row: 36
+2968 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#150]
+2968 [main] DEBUG org.hibernate.loader.Loader - Result set row: 37
+2968 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#151]
+2968 [main] DEBUG org.hibernate.loader.Loader - Result set row: 38
+2968 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#152]
+2968 [main] DEBUG org.hibernate.loader.Loader - Result set row: 39
+2968 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#153]
+2970 [main] DEBUG org.hibernate.loader.Loader - Result set row: 40
+2970 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#154]
+2970 [main] DEBUG org.hibernate.loader.Loader - Result set row: 41
+2970 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#156]
+2970 [main] DEBUG org.hibernate.loader.Loader - Result set row: 42
+2970 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#157]
+2970 [main] DEBUG org.hibernate.loader.Loader - Result set row: 43
+2970 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#158]
+2970 [main] DEBUG org.hibernate.loader.Loader - Result set row: 44
+2971 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#159]
+2971 [main] DEBUG org.hibernate.loader.Loader - Result set row: 45
+2971 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#160]
+2973 [main] DEBUG org.hibernate.loader.Loader - Result set row: 46
+2973 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#161]
+2974 [main] DEBUG org.hibernate.loader.Loader - Result set row: 47
+2974 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#162]
+2974 [main] DEBUG org.hibernate.loader.Loader - Result set row: 48
+2974 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#163]
+2974 [main] DEBUG org.hibernate.loader.Loader - Result set row: 49
+2974 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#164]
+2976 [main] DEBUG org.hibernate.loader.Loader - Result set row: 50
+2976 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#165]
+2976 [main] DEBUG org.hibernate.loader.Loader - Result set row: 51
+2977 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#166]
+2977 [main] DEBUG org.hibernate.loader.Loader - Result set row: 52
+2977 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#167]
+2977 [main] DEBUG org.hibernate.loader.Loader - Result set row: 53
+2977 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#168]
+2977 [main] DEBUG org.hibernate.loader.Loader - Result set row: 54
+2977 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#169]
+2977 [main] DEBUG org.hibernate.loader.Loader - Result set row: 55
+2977 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#171]
+2977 [main] DEBUG org.hibernate.loader.Loader - Result set row: 56
+2978 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#172]
+2978 [main] DEBUG org.hibernate.loader.Loader - Result set row: 57
+2978 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#173]
+2978 [main] DEBUG org.hibernate.loader.Loader - Result set row: 58
+2979 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#174]
+2979 [main] DEBUG org.hibernate.loader.Loader - Result set row: 59
+2979 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#175]
+2979 [main] DEBUG org.hibernate.loader.Loader - Result set row: 60
+2979 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#176]
+2980 [main] DEBUG org.hibernate.loader.Loader - Result set row: 61
+2980 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#177]
+2980 [main] DEBUG org.hibernate.loader.Loader - Result set row: 62
+2980 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#178]
+2980 [main] DEBUG org.hibernate.loader.Loader - Result set row: 63
+2980 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#179]
+2980 [main] DEBUG org.hibernate.loader.Loader - Result set row: 64
+2980 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#180]
+2981 [main] DEBUG org.hibernate.loader.Loader - Result set row: 65
+2981 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#181]
+2981 [main] DEBUG org.hibernate.loader.Loader - Result set row: 66
+2981 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#182]
+2981 [main] DEBUG org.hibernate.loader.Loader - Result set row: 67
+2981 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#183]
+2981 [main] DEBUG org.hibernate.loader.Loader - Result set row: 68
+2981 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#184]
+2981 [main] DEBUG org.hibernate.loader.Loader - Result set row: 69
+2983 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#185]
+2983 [main] DEBUG org.hibernate.loader.Loader - Result set row: 70
+2983 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#186]
+2983 [main] DEBUG org.hibernate.loader.Loader - Result set row: 71
+2983 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#187]
+2984 [main] DEBUG org.hibernate.loader.Loader - Result set row: 72
+2984 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#188]
+2984 [main] DEBUG org.hibernate.loader.Loader - Result set row: 73
+2984 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#189]
+2984 [main] DEBUG org.hibernate.loader.Loader - Result set row: 74
+2984 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#190]
+2984 [main] DEBUG org.hibernate.loader.Loader - Result set row: 75
+2984 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#191]
+2984 [main] DEBUG org.hibernate.loader.Loader - Result set row: 76
+2985 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#192]
+2985 [main] DEBUG org.hibernate.loader.Loader - Result set row: 77
+2985 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#193]
+2985 [main] DEBUG org.hibernate.loader.Loader - Result set row: 78
+2985 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#194]
+2985 [main] DEBUG org.hibernate.loader.Loader - Result set row: 79
+2985 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#195]
+2985 [main] DEBUG org.hibernate.loader.Loader - Result set row: 80
+2985 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[inna.qa.dp.model.GroupData#196]
+2987 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#82]
+2994 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#82]
+2994 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#85]
+2994 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#85]
+2994 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#90]
+2994 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#90]
+2994 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#91]
+2994 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#91]
+2994 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#113]
+2994 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#113]
+2994 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#114]
+2995 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#114]
+2995 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#115]
+2995 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#115]
+2995 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#116]
+2995 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#116]
+2995 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#117]
+2995 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#117]
+2995 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#118]
+2995 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#118]
+2995 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#119]
+2995 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#119]
+2995 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#120]
+2995 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#120]
+2995 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#121]
+2995 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#121]
+2995 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#122]
+2995 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#122]
+2995 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#123]
+2996 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#123]
+2996 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#124]
+2996 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#124]
+2996 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#126]
+2996 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#126]
+2996 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#127]
+2997 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#127]
+2997 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#128]
+2997 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#128]
+2997 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#130]
+2997 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#130]
+2997 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#131]
+2997 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#131]
+2997 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#132]
+2998 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#132]
+2998 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#133]
+2998 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#133]
+2998 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#135]
+2998 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#135]
+2998 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#136]
+2998 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#136]
+2998 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#137]
+2998 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#137]
+2998 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#138]
+2998 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#138]
+2998 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#139]
+2998 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#139]
+2998 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#140]
+2998 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#140]
+2998 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#142]
+2998 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#142]
+2998 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#143]
+2999 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#143]
+2999 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#144]
+2999 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#144]
+2999 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#145]
+2999 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#145]
+2999 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#146]
+2999 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#146]
+2999 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#147]
+2999 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#147]
+2999 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#148]
+2999 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#148]
+2999 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#150]
+2999 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#150]
+2999 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#151]
+3000 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#151]
+3000 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#152]
+3000 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#152]
+3000 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#153]
+3000 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#153]
+3000 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#154]
+3000 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#154]
+3000 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#156]
+3000 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#156]
+3000 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#157]
+3000 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#157]
+3000 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#158]
+3000 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#158]
+3000 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#159]
+3000 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#159]
+3000 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#160]
+3000 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#160]
+3000 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#161]
+3000 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#161]
+3001 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#162]
+3001 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#162]
+3001 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#163]
+3001 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#163]
+3001 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#164]
+3001 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#164]
+3001 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#165]
+3001 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#165]
+3001 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#166]
+3004 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#166]
+3004 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#167]
+3004 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#167]
+3004 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#168]
+3004 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#168]
+3004 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#169]
+3004 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#169]
+3004 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#171]
+3004 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#171]
+3004 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#172]
+3005 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#172]
+3005 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#173]
+3005 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#173]
+3005 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#174]
+3013 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#174]
+3013 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#175]
+3013 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#175]
+3013 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#176]
+3013 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#176]
+3013 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#177]
+3013 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#177]
+3013 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#178]
+3013 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#178]
+3013 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#179]
+3013 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#179]
+3013 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#180]
+3014 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#180]
+3014 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#181]
+3014 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#181]
+3014 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#182]
+3014 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#182]
+3014 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#183]
+3014 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#183]
+3014 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#184]
+3016 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#184]
+3016 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#185]
+3016 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#185]
+3016 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#186]
+3016 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#186]
+3016 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#187]
+3016 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#187]
+3016 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#188]
+3016 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#188]
+3016 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#189]
+3016 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#189]
+3016 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#190]
+3016 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#190]
+3016 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#191]
+3017 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#191]
+3017 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#192]
+3017 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#192]
+3017 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#193]
+3017 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#193]
+3017 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#194]
+3017 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#194]
+3017 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#195]
+3017 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#195]
+3017 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [inna.qa.dp.model.GroupData#196]
+3017 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [inna.qa.dp.model.GroupData#196]
+3032 [main] DEBUG o.h.e.t.internal.TransactionImpl - committing
+3033 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+3096 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+3112 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 81 objects
+3113 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+3114 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+3117 [main] DEBUG o.h.internal.util.EntityPrinter - inna.qa.dp.model.GroupData{footer=Footer 1, name=test 1, header=Header 1, id=139}
+3117 [main] DEBUG o.h.internal.util.EntityPrinter - inna.qa.dp.model.GroupData{footer=Footer 2, name=test 2, header=Header 2, id=140}
+3117 [main] DEBUG o.h.internal.util.EntityPrinter - inna.qa.dp.model.GroupData{footer=Footer 4, name=test 4, header=Header 4, id=142}
+3117 [main] DEBUG o.h.internal.util.EntityPrinter - inna.qa.dp.model.GroupData{footer=Footer 5, name=test 5, header=Header 5, id=143}
+3118 [main] DEBUG o.h.internal.util.EntityPrinter - inna.qa.dp.model.GroupData{footer=Footer 6, name=test 6, header=Header 6, id=144}
+3119 [main] DEBUG o.h.internal.util.EntityPrinter - inna.qa.dp.model.GroupData{footer=test3, name=test1, header=test2, id=145}
+3119 [main] DEBUG o.h.internal.util.EntityPrinter - inna.qa.dp.model.GroupData{footer=Footer 8, name=test 8, header=Header 8, id=146}
+3119 [main] DEBUG o.h.internal.util.EntityPrinter - inna.qa.dp.model.GroupData{footer=Footer 9, name=test 9, header=Header 9, id=147}
+3119 [main] DEBUG o.h.internal.util.EntityPrinter - inna.qa.dp.model.GroupData{footer=Footer 10, name=test 10, header=Header 10, id=148}
+3119 [main] DEBUG o.h.internal.util.EntityPrinter - inna.qa.dp.model.GroupData{footer=Footer 12, name=test 12, header=Header 12, id=150}
+3119 [main] DEBUG o.h.internal.util.EntityPrinter - inna.qa.dp.model.GroupData{footer=test3, name=test1, header=test2, id=151}
+3120 [main] DEBUG o.h.internal.util.EntityPrinter - inna.qa.dp.model.GroupData{footer=Footer 14, name=test 14, header=Header 14, id=152}
+3120 [main] DEBUG o.h.internal.util.EntityPrinter - inna.qa.dp.model.GroupData{footer=Footer 15, name=test 15, header=Header 15, id=153}
+3120 [main] DEBUG o.h.internal.util.EntityPrinter - inna.qa.dp.model.GroupData{footer=Footer 16, name=test 16, header=Header 16, id=154}
+3120 [main] DEBUG o.h.internal.util.EntityPrinter - inna.qa.dp.model.GroupData{footer=Footer 18, name=test 18, header=Header 18, id=156}
+3120 [main] DEBUG o.h.internal.util.EntityPrinter - inna.qa.dp.model.GroupData{footer=Footer 19, name=test 19, header=Header 19, id=157}
+3120 [main] DEBUG o.h.internal.util.EntityPrinter - inna.qa.dp.model.GroupData{footer=Footer 0, name=test 0, header=Header 0, id=158}
+3120 [main] DEBUG o.h.internal.util.EntityPrinter - inna.qa.dp.model.GroupData{footer=Footer 1, name=test 1, header=Header 1, id=159}
+3120 [main] DEBUG o.h.internal.util.EntityPrinter - inna.qa.dp.model.GroupData{footer=Footer 2, name=test 2, header=Header 2, id=160}
+3120 [main] DEBUG o.h.internal.util.EntityPrinter - inna.qa.dp.model.GroupData{footer=test3, name=test1, header=test2, id=161}
+3120 [main] DEBUG o.h.internal.util.EntityPrinter - inna.qa.dp.model.GroupData{footer=Footer 1, name=test 1, header=Header 1, id=162}
+3120 [main] DEBUG o.h.internal.util.EntityPrinter - More......
