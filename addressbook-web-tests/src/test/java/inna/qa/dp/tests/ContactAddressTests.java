@@ -39,6 +39,6 @@ public class ContactAddressTests extends TestBase {
     }
 
     public static String cleaned(String address) {
-        return address.replaceAll("\\s+", "").replaceAll("\n", " ");
+        return address.replaceAll("\\s+", "").replaceAll("\n", "");
     }
 }
